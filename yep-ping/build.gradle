@@ -1,0 +1,6 @@
+task('buildMod', type: BuildModTask)
+
+task('publishMod', type: PublishModTask) {
+    modName = 'YEP ping'
+    modDescription = 'Replaces the default ping effect with the YEP emote.'
+}

@@ -1,0 +1,11 @@
+########################################################################################################################
+# Replace the "ms_per_frame" property with the RHS for the LHS emoticon.
+#
+# Contains   '#' -> comment; ignore the rest of the line.
+########################################################################################################################
+
+cry.png         = 100
+eyeroll.png     = 100
+heart_kiss.png  = 25
+laugh.png       = 15
+rage.png        = 25

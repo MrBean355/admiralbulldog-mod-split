@@ -1,0 +1,6 @@
+task('buildMod', type: BuildModTask)
+
+task('publishMod', type: PublishModTask) {
+    modName = 'EleGiggle deny'
+    modDescription = 'Replaces the default deny icon with the EleGiggle emote.'
+}

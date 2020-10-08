@@ -1,0 +1,6 @@
+task('buildMod', type: BuildModTask)
+
+task('publishMod', type: PublishModTask) {
+    modName = 'Base mod'
+    modDescription = 'Lots of stuff; click "More information" below.'
+}
