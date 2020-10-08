@@ -50,6 +50,11 @@ open class BuildModTask : DefaultTask() {
         compilerOutput.copyRecursively(projectOutput)
         exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)
 
+        if (Environment.fullCompile) {
+            val destination = File(Environment.dotaRoot, "game/${project.name}/$OUTPUT_VPK")
+            File(projectOutput, OUTPUT_VPK).copyTo(destination, overwrite = true)
+        }
+
         contentDir.deleteRecursively()
         compilerOutput.deleteRecursively()
     }
