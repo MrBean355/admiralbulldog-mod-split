@@ -1,6 +1,6 @@
-task('buildMod', type: BuildModTask)
+apply plugin: 'mod'
 
-task('publishMod', type: PublishModTask) {
+mod {
     modName = 'YEP ping'
     modDescription = 'Replaces the default ping effect with the YEP emote.'
 }
