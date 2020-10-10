@@ -38,5 +38,5 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'mrbean355@users.noreply.github.com'
-          git commit -am "Add the latest strings files"
+          git commit -am "Add the latest strings files" || true
           git push
