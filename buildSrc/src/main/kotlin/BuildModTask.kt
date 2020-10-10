@@ -25,7 +25,7 @@ open class BuildModTask : DefaultTask() {
         }
 
         project.replaceStrings(projectOutput, replacements)
-        project.replaceEmoticons(projectOutput, emoticons)
+        replaceEmoticons(projectOutput, emoticons)
 
         if (!Environment.fullCompile) {
             exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)
