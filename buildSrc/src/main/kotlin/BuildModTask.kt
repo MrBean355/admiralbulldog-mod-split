@@ -9,6 +9,7 @@ private const val COMPILED_DIR = "compiled"
 private const val OUTPUT_VPK = "pak01_dir.vpk"
 
 open class BuildModTask : DefaultTask() {
+    var replacements: Map<String, String> = emptyMap()
 
     @TaskAction
     fun run() {
@@ -21,7 +22,7 @@ open class BuildModTask : DefaultTask() {
             it.mkdirs()
         }
 
-        project.replaceStrings(projectOutput)
+        project.replaceStrings(projectOutput, replacements)
         project.replaceEmoticons(projectOutput)
 
         if (!Environment.fullCompile) {

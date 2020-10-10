@@ -8,7 +8,7 @@ private const val REPLACEMENTS_FILE = "replacements.txt"
 private const val TARGET_DIRECTORY = "resource/localization"
 private val TARGET_FILES = arrayOf("abilities_english.txt", "dota_english.txt", "hero_chat_wheel_english.txt")
 
-fun Project.replaceStrings(compiledDir: File) {
+fun Project.replaceStrings(compiledDir: File, replacements: Map<String, String>) {
     val input = file(REPLACEMENTS_FILE)
     if (!input.exists()) {
         return
@@ -17,7 +17,7 @@ fun Project.replaceStrings(compiledDir: File) {
         it.deleteRecursively()
         it.mkdirs()
     }
-    val mappings = loadReplacements(input)
+    val mappings = loadReplacements(input, replacements)
     TARGET_FILES.forEach {
         downloadStringsFile(it, stringsDirectory)
         replaceInFile(File(stringsDirectory, it), mappings)
@@ -42,8 +42,8 @@ private val FILE_ENTRY_PATTERN = Regex("^\\s*\"(.*)\"\\s*\"(.*)\".*$")
 
 // Symbols used in the mappings file:
 private const val SEPARATOR = '='
-private const val EXACT_REPLACE = '!'
-private const val SINGLE_REPLACE = '@'
+const val EXACT_REPLACE = '!'
+const val SINGLE_REPLACE = '@'
 private const val COMMENT = '#'
 
 private class Mappings {
@@ -52,9 +52,19 @@ private class Mappings {
     val single = mutableMapOf<String, String>()
 }
 
-private fun loadReplacements(replacements: File): Mappings {
+private fun loadReplacements(replacements: File, combine: Map<String, String>): Mappings {
     require(replacements.exists()) { "Replacements file doesn't exist: ${replacements.absolutePath}" }
     val mappings = Mappings()
+
+    combine.forEach {
+        val key = it.key
+        when {
+            key.startsWith(EXACT_REPLACE) -> mappings.exact += key.drop(1) to it.value
+            key.startsWith(SINGLE_REPLACE) -> mappings.single += key.drop(1) to it.value
+            else -> mappings.contains += key to it.value
+        }
+    }
+
     replacements.readLines()
             .map { it.trim() }
             .filter { it.isNotEmpty() }
