@@ -5,12 +5,13 @@ import java.io.File
 
 private const val RENAMES_FILE = "renames.txt"
 
-fun Project.renameFiles(compiledDir: File) {
+fun Project.renameFiles(compiledDir: File, fileRenames: Map<String, String>) {
     val input = file(RENAMES_FILE)
     if (!input.exists()) {
         return
     }
-    loadRenames(input).forEach { (old, new) ->
+    val mappings = loadRenames(input) + fileRenames
+    mappings.forEach { (old, new) ->
         File(compiledDir, old).renameTo(File(compiledDir, new))
     }
 }

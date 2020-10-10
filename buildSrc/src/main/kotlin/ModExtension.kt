@@ -4,6 +4,7 @@ import org.gradle.api.Action
 
 open class ModExtension {
     val allReplacements: MutableMap<String, String> = mutableMapOf()
+    val allFileRenames: MutableMap<String, String> = mutableMapOf()
 
     var modName: String = ""
     var modDescription: String = ""
@@ -12,6 +13,13 @@ open class ModExtension {
         Replacements().also {
             action.execute(it)
             allReplacements += it.replacements
+        }
+    }
+
+    fun fileRenames(action: Action<Renames>) {
+        Renames().also {
+            action.execute(it)
+            allFileRenames += it.renames
         }
     }
 }
@@ -29,5 +37,13 @@ class Replacements {
 
     fun any(match: String, replacement: String) {
         replacements[match] = replacement
+    }
+}
+
+class Renames {
+    val renames = mutableMapOf<String, String>()
+
+    fun add(from: String, to: String) {
+        renames += from to to
     }
 }
