@@ -1,6 +1,8 @@
 name: Automated release
 
 on:
+  push:
+    branches: [ main ]
   schedule:
     - cron: '0 */6 * * *'
 
@@ -8,27 +10,33 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.2.0
+      - uses: actions/checkout@v2.3.3
 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7'
+          python-version: '3.9'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install vpk
 
-      - name: Repack mods
+      - name: Repackage mods
         run: |
           chmod +x gradlew
           ./gradlew buildMod -Pcompiler.fullCompile=false
 
-      - name: Publish mods
-        if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Upload mods to S3
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           ./gradlew publishMod
+
+      - name: Commit & push changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'mrbean355@users.noreply.github.com'
+          git commit -am "Add the latest strings files"
+          git push

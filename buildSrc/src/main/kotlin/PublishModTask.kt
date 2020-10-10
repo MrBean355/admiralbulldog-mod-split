@@ -1,3 +1,5 @@
+import org.eclipse.jgit.api.Git
+import org.eclipse.jgit.storage.file.FileRepositoryBuilder
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 import software.amazon.awssdk.core.sync.RequestBody
@@ -22,6 +24,10 @@ open class PublishModTask : DefaultTask() {
         val vpk = project.file(VPK_FILE)
         require(vpk.exists()) { "VPK file does not exist" }
 
+        if (!hasChanges()) {
+            return
+        }
+
         val s3 = S3Client.builder().region(Region.US_EAST_2).build()
 
         s3.putObject(
@@ -42,5 +48,20 @@ open class PublishModTask : DefaultTask() {
                     description=$modDescription
                 """.trimIndent())
         )
+    }
+
+    private fun hasChanges(): Boolean {
+        val repo = FileRepositoryBuilder()
+                .findGitDir()
+                .build()
+
+        require(repo.branch == "main") {
+            "On branch ${repo.branch} instead of main"
+        }
+
+        val git = Git.wrap(repo)
+        val status = git.status().addPath("${project.name}/compiled").call()
+
+        return !status.isClean
     }
 }
