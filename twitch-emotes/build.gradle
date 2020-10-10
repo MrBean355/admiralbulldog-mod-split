@@ -1,0 +1,6 @@
+task('buildMod', type: BuildModTask)
+
+task('publishMod', type: PublishModTask) {
+    modName = 'Twitch emotes'
+    modDescription = 'Replaces some Dota 2 emoticons with Twitch ones.'
+}
