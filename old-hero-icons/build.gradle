@@ -1,0 +1,6 @@
+task('buildMod', type: BuildModTask)
+
+task('publishMod', type: PublishModTask) {
+    modName = 'Old hero icons'
+    modDescription = 'Replaces some hero icons with older versions.'
+}
