@@ -3,4 +3,9 @@ apply plugin: 'mod'
 mod {
     modName = 'Base mod'
     modDescription = 'Lots of stuff; click "More information" below.'
+
+    fileRenames {
+        add('panorama/images/hud/reborn/statbranch_button_bg_png.vtex_c', 'panorama/images/hud/reborn/statbranch_button_bg_psd.vtex_c')
+        add('panorama/images/textures/startup_background_logo_png.vtex_c', 'panorama/images/textures/startup_background_logo_psd.vtex_c')
+    }
 }

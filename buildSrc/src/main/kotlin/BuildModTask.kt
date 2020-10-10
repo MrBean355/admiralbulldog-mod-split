@@ -48,7 +48,7 @@ open class BuildModTask : DefaultTask() {
         compileImages(contentDir, compilerOutput)
         compileSounds(contentDir)
         compileMaterials(contentDir)
-        project.renameFiles(compilerOutput, fileRenames)
+        renameFiles(compilerOutput, fileRenames)
 
         compilerOutput.copyRecursively(projectOutput)
         exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)
