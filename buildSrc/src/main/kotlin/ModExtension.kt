@@ -5,6 +5,7 @@ import org.gradle.api.Action
 open class ModExtension {
     val allReplacements: MutableMap<String, String> = mutableMapOf()
     val allFileRenames: MutableMap<String, String> = mutableMapOf()
+    val allEmoticons: MutableMap<String, Int> = mutableMapOf()
 
     var modName: String = ""
     var modDescription: String = ""
@@ -20,6 +21,13 @@ open class ModExtension {
         Renames().also {
             action.execute(it)
             allFileRenames += it.renames
+        }
+    }
+
+    fun emoticons(action: Action<Emoticons>) {
+        Emoticons().also {
+            action.execute(it)
+            allEmoticons += it.millisPerFrame
         }
     }
 }
@@ -45,5 +53,13 @@ class Renames {
 
     fun add(from: String, to: String) {
         renames += from to to
+    }
+}
+
+class Emoticons {
+    val millisPerFrame = mutableMapOf<String, Int>()
+
+    fun add(name: String, millisPerFrame: Int) {
+        this.millisPerFrame += name to millisPerFrame
     }
 }

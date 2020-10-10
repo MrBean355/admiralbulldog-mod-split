@@ -9,6 +9,7 @@ class ModPlugin : Plugin<Project> {
         target.tasks.register("buildMod", BuildModTask::class.java) {
             it.replacements = extension.allReplacements
             it.fileRenames = extension.allFileRenames
+            it.emoticons = extension.allEmoticons
         }
 
         target.tasks.register("publishMod", PublishModTask::class.java) {

@@ -11,6 +11,7 @@ private const val OUTPUT_VPK = "pak01_dir.vpk"
 open class BuildModTask : DefaultTask() {
     var replacements: Map<String, String> = emptyMap()
     var fileRenames: Map<String, String> = emptyMap()
+    var emoticons: Map<String, Int> = emptyMap()
 
     @TaskAction
     fun run() {
@@ -24,7 +25,7 @@ open class BuildModTask : DefaultTask() {
         }
 
         project.replaceStrings(projectOutput, replacements)
-        project.replaceEmoticons(projectOutput)
+        project.replaceEmoticons(projectOutput, emoticons)
 
         if (!Environment.fullCompile) {
             exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)

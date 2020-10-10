@@ -7,7 +7,7 @@ import java.io.File
 private const val REPLACEMENTS_FILE = "emoticons.txt"
 private const val EMOTICONS_FILE = "emoticons.txt"
 
-fun Project.replaceEmoticons(compiledDir: File) {
+fun Project.replaceEmoticons(compiledDir: File, emoticons: Map<String, Int>) {
     val input = file(REPLACEMENTS_FILE)
     if (!input.exists()) {
         return
@@ -16,7 +16,7 @@ fun Project.replaceEmoticons(compiledDir: File) {
         it.mkdirs()
     }
     downloadEmoticonsFile(emoticonsDirectory)
-    replaceInFile(File(emoticonsDirectory, EMOTICONS_FILE), loadReplacements(input))
+    replaceInFile(File(emoticonsDirectory, EMOTICONS_FILE), loadReplacements(input, emoticons))
 }
 
 private fun downloadEmoticonsFile(destination: File): File {
@@ -39,9 +39,9 @@ private val FILE_ENTRY_PATTERN = Regex("^\\s+\"(.*)\"\\s+\"(.*)\"$")
 private const val SEPARATOR = '='
 private const val COMMENT = '#'
 
-private fun loadReplacements(replacements: File): Map<String, Int> {
+private fun loadReplacements(replacements: File, combine: Map<String, Int>): Map<String, Int> {
     require(replacements.exists()) { "Replacements file doesn't exist: ${replacements.absolutePath}" }
-    val mappings = mutableMapOf<String, Int>()
+    val mappings = combine.toMutableMap()
     replacements.readLines()
             .map { it.trim() }
             .filter { it.isNotEmpty() }
