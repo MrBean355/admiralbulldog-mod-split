@@ -31,9 +31,11 @@ open class PublishModTask : DefaultTask() {
         val modKey = project.name
 
         if (!hasChanges(modKey) && RemoteMods.exists(modKey)) {
+            println("No changes made; not uploading.")
             return
         }
 
+        println("Changes made; uploading...")
         s3.putObject(
                 PutObjectRequest.builder()
                         .bucket(MODS_BUCKET)
