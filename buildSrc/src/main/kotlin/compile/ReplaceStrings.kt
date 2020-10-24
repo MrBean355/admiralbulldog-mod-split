@@ -93,7 +93,7 @@ private fun replaceInFile(input: File, mappings: Mappings) {
     input.forEachLine { line ->
         val match = FILE_ENTRY_PATTERN.matchEntire(line)
         if (match == null) {
-            output.append(line + "\n")
+            output.appendln(line)
         } else {
             val key = match.groupValues[1]
             val oldValue = match.groupValues[2]
@@ -107,7 +107,7 @@ private fun replaceInFile(input: File, mappings: Mappings) {
                     }
                 }
             }
-            output.append(line.replace("\"$oldValue\"", "\"$newValue\"") + "\n")
+            output.appendln(line.replace("\"$oldValue\"", "\"$newValue\""))
         }
     }
     input.writeText(output.toString())
