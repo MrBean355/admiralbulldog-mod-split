@@ -37,9 +37,9 @@ Song of the Siren = FatSing
 @DOTA_CurrentPlayersLabel = Feeders In Game Now
 !Game is paused           = ResidentSleeper
 !tipped %s1. Well Played! = tipped %s1. Git gud scrub sadKEK
-!Grants bonus Gold.       = DA ROONS haHAA
 invulnerable              = ungillable
 Invulnerable              = Ungillable
+@DOTA_Chat_PlayerAbandoned = %s1 has rage quit and abandoned the game KEKW "I've had it with these fucking 2ks KEKW"
 
 # Leave Dialog
 @dota_abandon_dialog_title   = BabyRage
