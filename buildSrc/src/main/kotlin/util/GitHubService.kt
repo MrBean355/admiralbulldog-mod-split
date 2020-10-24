@@ -7,6 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 import retrofit2.http.GET
 import retrofit2.http.Path
+import retrofit2.http.Query
 import retrofit2.http.Streaming
 
 interface GitHubService {
@@ -18,6 +19,9 @@ interface GitHubService {
     @GET("https://raw.githubusercontent.com/SteamDatabase/GameTracking-Dota2/master/game/dota/pak01_dir/scripts/emoticons.txt")
     @Streaming
     fun getEmoticonsFile(): Call<ResponseBody>
+
+    @GET("http://prod.upmccxmkjx.us-east-2.elasticbeanstalk.com:8090/mods/refresh")
+    fun refreshMods(@Query("token") token: String): Call<ResponseBody>
 
     companion object {
         val INSTANCE = Retrofit.Builder()

@@ -8,6 +8,7 @@ import software.amazon.awssdk.services.s3.S3Client
 import software.amazon.awssdk.services.s3.model.ListObjectsV2Request
 import software.amazon.awssdk.services.s3.model.ObjectCannedACL.PUBLIC_READ
 import software.amazon.awssdk.services.s3.model.PutObjectRequest
+import util.GitHubService
 
 private const val VPK_FILE = "pak01_dir.vpk"
 private const val OUTPUT_VPK_FILE = "compiled/$VPK_FILE"
@@ -51,6 +52,7 @@ open class PublishModTask : DefaultTask() {
                     description=$modDescription
                 """.trimIndent())
         )
+        refreshMods()
     }
 
     private fun hasChanges(modKey: String): Boolean {
@@ -66,6 +68,14 @@ open class PublishModTask : DefaultTask() {
         val status = git.status().addPath("$modKey/compiled").call()
 
         return !status.isClean
+    }
+
+    private fun refreshMods() {
+        val token = System.getenv("AUTH_TOKEN")
+        require(!token.isNullOrBlank()) {
+            "No token provided via AUTH_TOKEN"
+        }
+        GitHubService.INSTANCE.refreshMods(token).execute()
     }
 }
 
