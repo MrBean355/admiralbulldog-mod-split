@@ -13279,7 +13279,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 
 	"dota_tip_hero_phantom_assassin_1"	"An Aeon Disk or Blade Mail can be a good item to build facing a Phantom Assassin with high burst damage."
 
-	"dota_tip_hero_phantom_lancer_1"	"Phantom Lancer often chooses to build a Diffusal Blade; Magic Immunity from a sadKEK Bar can be used to counter this effect."
+	"dota_tip_hero_phantom_lancer_1"	"Phantom Lancer often chooses to build a Diffushal Blade; Magic Immunity from a sadKEK Bar can be used to counter this effect."
 	"dota_tip_hero_phantom_lancer_2"	"Phantom Lancer relies on his many illusions to deal most of his damage. Investing in items that will allow killing those illusions quickly, such as Shiva's Guard or Mjollnir, could prove very beneficial."
 	"dota_tip_hero_phantom_lancer_3"	"Phantom Lancer can use Doppelganger to dispel some debuffs as well disjoint projectiles."
 	"dota_tip_hero_phantom_lancer_4"	"Illusions of Phantom Lancer that are created by enemy abilities, such as Shadow Demon's Disruption or Terrorblade's Reflection will still have a chance to fracture into more illusions."
@@ -13368,7 +13368,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 	"dota_tip_hero_storm_spirit_3"		"Storm Spirit can use items and abilities during Ball Lightning, which is especially useful when initiating on unsuspecting enemies or trying to teleport back to base."
 	"dota_tip_hero_storm_spirit_4"		"Overload is applied after Storm Spirit uses any of his abilities, including Ball Lightning. It may be beneficial to use an ability between every attack to maximize Storm's damage output."
 	"dota_tip_hero_storm_spirit_5"		"Ball Lightning is not only a superb mobility tool, but is a great source of damage when used from a long distance. Making sure an enemy gets hit by a long initiation is an important component of Storm Spirit's damage output."
-	"dota_tip_hero_storm_spirit_6"		"Storm Spirit is very dependent on having mana to fight. Items and abilities that attack his mana pool, such as Diffusal Blade or Nyx's Mana Burn, can be devastating for Storm Spirit."
+	"dota_tip_hero_storm_spirit_6"		"Storm Spirit is very dependent on having mana to fight. Items and abilities that attack his mana pool, such as Diffushal Blade or Nyx's Mana Burn, can be devastating for Storm Spirit."
 	"dota_tip_hero_storm_spirit_7"		"Storm Spirit's invulnerability during Ball Lightning means that he can completely ignore most negative effects from movement-based spells, such as Bloodseeker's Rupture."
 
 	"dota_tip_hero_sven_1"				"Sven's Great Cleave causes physical damage in an area that is mitigated by armor."
@@ -19266,8 +19266,8 @@ Special Techies Taunt"
 		"DOTA_ChallengeDesc_Terrorblade_KillsDuringMeta"				"Kill <font color='#ffffff'>%s1</font> enemy Heroes while affected by <font color='#ffffff'>Metamorphosis</font>."
 		"DOTA_ChallengeStatus_Terrorblade_KillsDuringMeta"				"%s2I need to kill %s1 more enemy Heroes during Metamorphosis!"
 
-		"DOTA_ChallengeDesc_DiffusalManaDamage"							"Deal <font color='#ffffff'>%s1</font> mana burn to enemy heroes with <font color='#ffffff'>Diffusal Blade</font>."
-		"DOTA_ChallengeStatus_DiffusalManaDamage"						"%s2I need to deal %s1 more mana burn to enemy heroes with Diffusal Blade!"
+		"DOTA_ChallengeDesc_DiffusalManaDamage"							"Deal <font color='#ffffff'>%s1</font> mana burn to enemy heroes with <font color='#ffffff'>Diffushal Blade</font>."
+		"DOTA_ChallengeStatus_DiffusalManaDamage"						"%s2I need to deal %s1 more mana burn to enemy heroes with Diffushal Blade!"
 
 		"KillEaterEvent_AncientApparition_MagicDamageUnderIceVortex"	"Ice Vortex Magic Damage"
 

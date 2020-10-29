@@ -6,14 +6,6 @@
 # Contains   '#' -> comment; ignore the rest of the line.
 ########################################################################################################################
 
-# Items
-Black King Bar  = sadKEK Bar
-Mango           = FatMango
-mango           = FatMango
-Mask of Madness = Mask of Maldness
-Scythe of Vyses = Eggs
-Scythe of Vyse  = Eggs
-
 # Heroes
 The Ancient Apparition = Ronnie Coleman                # The Ancient Apparition's eternal knowledge ...
 Ancient Apparition     = Ronnie Coleman

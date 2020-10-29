@@ -10,6 +10,15 @@ mod {
     }
 
     stringReplacements {
+        // Items
+        it.any('Black King Bar', 'sadKEK Bar')
+        it.any('Diffusal Blade', 'Diffushal Blade')
+        it.any('Mango', 'FatMango')
+        it.any('mango', 'FatMango')
+        it.any('Mask of Madness', 'Mask of Maldness')
+        it.any('Scythe of Vyses', 'Eggs')
+        it.any('Scythe of Vyse', 'Eggs')
+
         // Runes
         id('DOTA_Tooltip_rune_bounty_description', 'DA ROONS haHAA')
         id('DOTA_Tooltip_rune_haste', 's4')
