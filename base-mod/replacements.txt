@@ -7,7 +7,6 @@
 ########################################################################################################################
 
 # Items
-Hand of Midas   = GorpPidas
 Black King Bar  = sadKEK Bar
 Mango           = FatMango
 mango           = FatMango
