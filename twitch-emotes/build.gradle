@@ -1,9 +1,6 @@
 apply plugin: 'mod'
 
 mod {
-    modName = 'Twitch emotes'
-    modDescription = 'Replaces some Dota 2 emoticons with Twitch ones.'
-
     emoticons {
         add("cry.png", 100)
         add("eyeroll.png", 100)

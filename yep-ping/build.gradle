@@ -1,9 +1,6 @@
 apply plugin: 'mod'
 
 mod {
-    modName = 'YEP ping'
-    modDescription = 'Replaces the default ping effect with the YEP emote.'
-
     fileRenames {
         add('panorama/images/pings/ping_world_png.vtex_c', 'panorama/images/pings/ping_world_psd.vtex_c')
     }

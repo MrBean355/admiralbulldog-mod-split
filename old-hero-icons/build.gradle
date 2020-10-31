@@ -1,6 +1,1 @@
 apply plugin: 'mod'
-
-mod {
-    modName = 'Old hero icons'
-    modDescription = 'Replaces some hero icons with older versions.'
-}

@@ -12,9 +12,6 @@ class ModPlugin : Plugin<Project> {
             it.emoticons = extension.allEmoticons
         }
 
-        target.tasks.register("publishMod", PublishModTask::class.java) {
-            it.modName = extension.modName
-            it.modDescription = extension.modDescription
-        }
+        target.tasks.register("publishMod", PublishModTask::class.java)
     }
 }

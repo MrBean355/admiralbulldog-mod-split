@@ -7,9 +7,6 @@ open class ModExtension {
     val allFileRenames: MutableMap<String, String> = mutableMapOf()
     val allEmoticons: MutableMap<String, Int> = mutableMapOf()
 
-    var modName: String = ""
-    var modDescription: String = ""
-
     fun stringReplacements(action: Action<Replacements>) {
         Replacements().also {
             action.execute(it)

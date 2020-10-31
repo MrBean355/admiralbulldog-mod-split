@@ -1,6 +1,1 @@
 apply plugin: 'mod'
-
-mod {
-    modName = 'EleGiggle deny'
-    modDescription = 'Replaces the default deny icon with the EleGiggle emote.'
-}

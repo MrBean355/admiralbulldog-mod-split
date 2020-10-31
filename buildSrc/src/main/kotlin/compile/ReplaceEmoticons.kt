@@ -1,6 +1,6 @@
 package compile
 
-import util.GitHubService
+import service.GitHubService
 import java.io.File
 
 private const val EMOTICONS_FILE = "emoticons.txt"

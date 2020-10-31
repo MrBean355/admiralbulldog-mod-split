@@ -1,7 +1,7 @@
 package compile
 
 import org.gradle.api.Project
-import util.GitHubService
+import service.GitHubService
 import java.io.File
 
 private const val REPLACEMENTS_FILE = "replacements.txt"
