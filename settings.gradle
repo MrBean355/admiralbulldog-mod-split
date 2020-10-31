@@ -1,5 +1,9 @@
 include 'base-mod',
+        'custom-spell-icons',
+        'custom-spell-sounds',
         'elegiggle-deny',
+        'fat-mango',
+        'mask-of-maldness',
         'old-hero-icons',
         'twitch-emotes',
         'yep-ping'
