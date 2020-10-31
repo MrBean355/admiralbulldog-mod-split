@@ -41,6 +41,6 @@ open class PublishModTask : DefaultTask() {
                 RequestBody.fromFile(vpk)
         )
 
-        RemoteMods.updateModHash(modKey, localHash)
+        RemoteMods.updateModHash(modKey, localHash, (vpk.length() / 1024).toInt())
     }
 }

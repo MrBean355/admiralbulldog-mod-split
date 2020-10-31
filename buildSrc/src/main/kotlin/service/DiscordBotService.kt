@@ -18,6 +18,7 @@ interface DiscordBotService {
     fun patchMod(
             @Path("key") key: String,
             @Query("hash") hash: String,
+            @Query("size") size: Int,
             @Query("token") token: String
     ): Call<Unit>
 
