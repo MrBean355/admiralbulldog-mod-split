@@ -1,3 +1,3 @@
-# AdmiralBulldog Dota 2 Mod
+# AdmiralBulldog Dota 2 Mods
 
-Welcome! Please see [the wiki](https://github.com/MrBean355/admiralbulldog-mod-split/wiki) for more information.
+Welcome! Please visit the [app's page](https://github.com/MrBean355/admiralbulldog-sounds/wiki/Dota-Mod) to get started with the mods.
