@@ -13,6 +13,7 @@ mod {
         it.any('Mango', 'FatMango')
         it.any('mango', 'FatMango')
         it.any('Mask of Madness', 'Mask of Maldness')
+        it.any('Royal Jelly', 'Royal Yelly')
         it.any('Scythe of Vyses', 'Eggs')
         it.any('Scythe of Vyse', 'Eggs')
 

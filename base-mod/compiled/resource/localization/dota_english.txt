@@ -5569,7 +5569,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"dota_hud_error_divine_favor_ward_unit"		"Cannot Teleport Ward Units"
 		"dota_hud_error_divine_favor_courier"		"Cannot Teleport Couriers"
 		"dota_hud_error_divine_favor_invalid_target"		"Invalid Target"
-		"dota_hud_error_royal_jelly_no_stack"			"Royal Jelly does not stack on the same unit"
+		"dota_hud_error_royal_jelly_no_stack"			"Royal Yelly does not stack on the same unit"
 		"dota_hud_error_cant_change_tree_model"			"Cannot Change Tree Model"
 
 		"dota_cursor_silenced"							"Silenced!"

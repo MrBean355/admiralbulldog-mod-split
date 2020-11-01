@@ -8210,7 +8210,7 @@
 		"DOTA_Tooltip_Ability_item_mirror_shield"		"Mirror Shield"
 		"DOTA_Tooltip_Ability_item_ironwood_tree"		"Ironwood Tree"
 		"DOTA_Tooltip_Ability_item_recipe_ironwood_tree"		"Ironwood Tree Recipe"
-		"DOTA_Tooltip_Ability_item_royal_jelly"		"Royal Jelly"
+		"DOTA_Tooltip_Ability_item_royal_jelly"		"Royal Yelly"
 		"DOTA_Tooltip_Ability_item_pupils_gift"		"Pupil's Gift"
 		"DOTA_Tooltip_Ability_item_tome_of_aghanim"		"Tome of Aghanim"
 		"DOTA_Tooltip_Ability_item_repair_kit"		"Repair Kit"
@@ -10293,7 +10293,7 @@
 		"DOTA_Tooltip_ability_item_ironwood_tree_bonus_all_stats"					"+$all"
 
 		"DOTA_Tooltip_ability_item_royal_jelly_Description"							"<h1>Use: Consume</h1> Grants a target allied unit a permanent buff that provides +%health_regen% Health Regen and +%mana_regen% Mana Regen.<br><br>Does not stack on the same unit."
-		"DOTA_Tooltip_modifier_royal_jelly"			"Royal Jelly"
+		"DOTA_Tooltip_modifier_royal_jelly"			"Royal Yelly"
 		"DOTA_Tooltip_modifier_royal_jelly_Description"			"Provides %fMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% health regen and %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT% mana regen."
 		
 		"DOTA_Tooltip_ability_item_pupils_gift_Description"				"Increases both non-primary attributes."		
