@@ -2237,6 +2237,8 @@
 		"DOTA_Tooltip_modifier_tinker_laser_blind_Description"		"Missing %dMODIFIER_PROPERTY_MISS_PERCENTAGE%%% of attacks."
 		"DOTA_Tooltip_modifier_tinker_rearm"						"Rearm"
 		"DOTA_Tooltip_modifier_tinker_rearm_Description"			"Resetting ability cooldowns."
+		"DOTA_Tooltip_modifier_tinker_defense_matrix"				"Defense Matrix"
+		"DOTA_Tooltip_modifier_tinker_defense_matrix_Description"	"Absorbs incoming damage and provides %dMODIFIER_PROPERTY_STATUS_RESISTANCE_STACKING%%% status resistance."
 
 		//SNIPER
 		"DOTA_Tooltip_ability_sniper_shrapnel"											"Shrapnel"
@@ -5103,6 +5105,8 @@
 		
 		"DOTA_Tooltip_modifier_nyx_assassin_vendetta_break"	"Vendetta"
 		"DOTA_Tooltip_modifier_nyx_assassin_vendetta_break_Description"	"Passive abilities disabled."
+		"DOTA_Tooltip_modifier_nyx_assassin_vendetta_armor_reduction"				"Vendetta"
+		"DOTA_Tooltip_modifier_nyx_assassin_vendetta_armor_reduction_Description"	"Has magic resistance reduced by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%."
 
 		//NAGA SIREN
 		"DOTA_Tooltip_ability_naga_siren_mirror_image"							"Mirror Image"
@@ -5136,8 +5140,6 @@
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_Note2"				"The area of the song follows Naga, so if she moves far enough away from affected units, they will wake up."
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_regen_rate_tooltip_scepter" "%SCEPTER HEALTH REGEN:"
-		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_scepter_cooldown" "SCEPTER COOLDOWN:"
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_cancel"				"Song of the Siren End"
 		"DOTA_Tooltip_ability_naga_siren_song_of_the_siren_cancel_Description"	"Release enemy units from your song so they can be targeted again."
 		
@@ -5504,6 +5506,9 @@
 
 		"DOTA_Tooltip_modifier_troll_warlord_berserkers_rage_ensnare"	"Berserker's Rage"
 		"DOTA_Tooltip_modifier_troll_warlord_berserkers_rage_ensnare_Description"	"You're ensared by an enraged Troll!"
+
+		"DOTA_Tooltip_modifier_troll_warlord_battle_trance_aura"				"Battle Trance Aura"
+		"DOTA_Tooltip_modifier_troll_warlord_battle_trance_aura_Description"	"Grants %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% attack speed."
 
 		// CENTAUR WARCHIEF
 		"DOTA_Tooltip_ability_centaur_hoof_stomp"								"Hoof Stomp"
@@ -6355,7 +6360,7 @@
 		"DOTA_Tooltip_ability_terrorblade_terror_wave_scepter_radius"					"RADIUS:"
 
 		"DOTA_Tooltip_ability_terrorblade_demon_zeal"									"Demon Zeal"
-		"DOTA_Tooltip_ability_terrorblade_demon_zeal_Description"              "Costs %health_cost_pct%%% of Terrorblade's Current HP to cast, providing him +%berserk_bonus_movement_speed%%% Movement and +%berserk_bonus_attack_speed%%% Attack Speed for %duration% seconds. Provides %melee_bonus%%% more bonus while melee. Cooldown: 14. "
+		"DOTA_Tooltip_ability_terrorblade_demon_zeal_Description"              "Costs %health_cost_pct%%% of Terrorblade's Current HP to cast, providing him +%berserk_bonus_movement_speed% Movement and +%berserk_bonus_attack_speed%%% Attack Speed for %duration% seconds. Provides %melee_bonus%%% more bonus while melee. Cooldown: 14. "
 
 		"DOTA_Tooltip_modifier_terrorblade_reflection_slow"					"Reflection"
 		"DOTA_Tooltip_modifier_terrorblade_reflection_slow_Description"		"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and being attacked by Terrorblade's reflection."
@@ -6923,6 +6928,9 @@
 
 		"DOTA_Tooltip_modifier_mars_bulwark"							"Bulwark"
 		"DOTA_Tooltip_modifier_mars_bulwark_Description"				"Blocking %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%% of each physical attack from the front, half from the sides."
+
+		"DOTA_Tooltip_modifier_mars_bulwark_soldier_thinker"				"Bulwark Soldiers"
+		"DOTA_Tooltip_modifier_mars_bulwark_soldier_thinker_Description"	"Soldiers deal full damage +75 and apply procs. Attacks slow enemies by 20% for 1 second. An enemy can only be attacked by one soldier at a time."
 
 		"DOTA_Tooltip_ability_mars_arena_of_blood"						"Arena Of Blood"
 		"DOTA_Tooltip_ability_mars_arena_of_blood_Description"			"After a short formation time, Mars summons an arena lined with the undead warriors of the Ash Legion, who block enemy attacks and movement. Enemy heroes near the inside edge of the arena will be attacked by spears, dealing damage and knocking them back." 
@@ -10072,10 +10080,13 @@
 		"DOTA_Tooltip_ability_item_quicksilver_amulet_projectile_increase"			"%+Attack Projectile Speed"
 		"DOTA_Tooltip_ability_item_quicksilver_amulet_anim_increase"			"%+Attack Animation Speed"
 
+		"DOTA_Tooltip_modifier_item_quicksilver_amulet"					"Quicksilver Amulet"
+		"DOTA_Tooltip_modifier_item_quicksilver_amulet_Description"		"Granting bonus movespeed and attack speed while an ability is on cooldown."
+
 		"DOTA_Tooltip_modifier_item_bullwhip_buff"				        "Bullwhip"
 		"DOTA_Tooltip_modifier_item_bullwhip_buff_Description"          "Movement speed reduced by Armor is reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 
-		"DOTA_Tooltip_ability_item_psychic_headband_Description"						"<h1>Active: Pyschic Push</h1>Pushes the target enemy unit away from you %push_length% distance."
+		"DOTA_Tooltip_ability_item_psychic_headband_Description"						"<h1>Active: Psychic Push</h1>Pushes the target enemy unit away from you %push_length% distance."
 		"DOTA_Tooltip_ability_item_psychic_headband_Lore"						"A failed experiment in finer telekinetic control, still fit for other ends."
 		"DOTA_Tooltip_ability_item_psychic_headband_intelligence_pct"						"%+Intelligence"
 		"DOTA_Tooltip_ability_item_psychic_headband_cast_range"						"+$cast_range"
