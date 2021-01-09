@@ -1,6 +1,6 @@
-apply plugin: 'mod'
+apply(plugin = "mod")
 
-mod {
+configure<ModExtension> {
     emoticons {
         add("cry.png", 100)
         add("eyeroll.png", 100)
