@@ -1,6 +1,6 @@
 apply(plugin = "mod")
 
-configure<ModExtension> {
+dotaMod {
     fileRenames {
         add("panorama/images/hud/reborn/statbranch_button_bg_png.vtex_c", "panorama/images/hud/reborn/statbranch_button_bg_psd.vtex_c")
         add("panorama/images/textures/startup_background_logo_png.vtex_c", "panorama/images/textures/startup_background_logo_psd.vtex_c")

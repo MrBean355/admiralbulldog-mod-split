@@ -1,6 +1,6 @@
 apply(plugin = "mod")
 
-configure<ModExtension> {
+dotaMod {
     emoticons {
         add("cry.png", 100)
         add("eyeroll.png", 100)

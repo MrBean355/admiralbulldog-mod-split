@@ -15,3 +15,6 @@ class ModPlugin : Plugin<Project> {
         target.tasks.register("publishMod", PublishModTask::class.java)
     }
 }
+
+fun Project.dotaMod(configure: ModExtension.() -> Unit) =
+    extensions.getByType(ModExtension::class.java).let(configure)
