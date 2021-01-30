@@ -1,8 +1,6 @@
 name: Automated release
 
 on:
-  push:
-    branches: [ main, develop ]
   schedule:
     - cron: '0 */6 * * *'
 
