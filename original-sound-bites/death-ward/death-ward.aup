@@ -1,0 +1,72 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="death-ward_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="153.0438197235" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf58.19.102"/>
+		<tag name="major_brand" value="dash"/>
+		<tag name="minor_version" value="0"/>
+		<tag name="compatible_brands" value="iso6mp41"/>
+	</tags>
+	<wavetrack name="default" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="38180">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808c2f.au" len="38180" min="-0.947173" max="1.0" rms="0.260576"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="7.69113984" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="16260">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a13.au" len="16260" min="-0.503379" max="0.681672" rms="0.149289"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="default" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="38180">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808b30.au" len="38180" min="-0.950327" max="0.999431" rms="0.260069"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+		<waveclip offset="7.69113984" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="16260">
+				<waveblock start="0">
+					<simpleblockfile filename="e08086fa.au" len="16260" min="-0.503283" max="0.681877" rms="0.149855"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Witch Doctor Sings a Song" isSelected="0" height="150" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.64034014" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="327200">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808330.au" len="67869" min="-0.902789" max="0.927402" rms="0.260837"/>
+				</waveblock>
+				<waveblock start="67869">
+					<simpleblockfile filename="e0808b3c.au" len="259331" min="-0.975498" max="0.955914" rms="0.218679"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Witch Doctor Sings a Song" isSelected="0" height="150" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.64034014" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="327200">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808ef6.au" len="67869" min="-0.919395" max="0.984172" rms="0.26188"/>
+				</waveblock>
+				<waveblock start="67869">
+					<simpleblockfile filename="e080827f.au" len="259331" min="-1.0" max="0.985181" rms="0.224266"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

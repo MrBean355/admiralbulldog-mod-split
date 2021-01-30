@@ -10,3 +10,4 @@ Links to where the sound bites were taken from.
 - Enigma - [Black Hole](https://youtu.be/kHhtOrZ6qrs?t=141)
 - Kunkka - [Ghost Ship](https://admiralbullbot.github.io/playsounds/files/bulldog/aaah.ogg)
 - Naga Siren - [Song of the Siren](https://youtu.be/8Rq0Gg6PEac?t=169)
+- Witch Doctor - [Death Ward](https://youtu.be/HmZYgqBp1gI)
