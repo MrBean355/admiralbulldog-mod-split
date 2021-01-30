@@ -10,6 +10,7 @@ Links to where the sound bites were taken from.
 - Enigma - [Black Hole](https://youtu.be/kHhtOrZ6qrs?t=141)
 - Kunkka - [Ghost Ship](https://admiralbullbot.github.io/playsounds/files/bulldog/aaah.ogg)
 - Kunkka - [X Marks the Spot](https://admiralbullbot.github.io/playsounds/files/new/sike.ogg)
+- Lich - [Sinister Gaze](https://youtu.be/fYzPQ3sKuWM?t=116)
 - Naga Siren - [Song of the Siren](https://youtu.be/8Rq0Gg6PEac?t=169)
 - Nature's Prophet - [Teleportation](https://admiralbullbot.github.io/playsounds/files/bulldog/seeya.ogg)
 - Queen of Pain - [Sonic Wave](https://youtu.be/OlOy9zjIdmc?t=26)
