@@ -11,5 +11,6 @@ Links to where the sound bites were taken from.
 - Kunkka - [Ghost Ship](https://admiralbullbot.github.io/playsounds/files/bulldog/aaah.ogg)
 - Kunkka - [X Marks the Spot](https://admiralbullbot.github.io/playsounds/files/new/sike.ogg)
 - Naga Siren - [Song of the Siren](https://youtu.be/8Rq0Gg6PEac?t=169)
+- Nature's Prophet - [Teleportation](https://admiralbullbot.github.io/playsounds/files/bulldog/seeya.ogg)
 - Queen of Pain - [Sonic Wave](https://youtu.be/OlOy9zjIdmc?t=26)
 - Witch Doctor - [Death Ward](https://youtu.be/HmZYgqBp1gI)
