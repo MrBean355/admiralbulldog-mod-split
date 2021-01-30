@@ -14,3 +14,21 @@ Links to where the sound bites were taken from.
 - Nature's Prophet - [Teleportation](https://admiralbullbot.github.io/playsounds/files/bulldog/seeya.ogg)
 - Queen of Pain - [Sonic Wave](https://youtu.be/OlOy9zjIdmc?t=26)
 - Witch Doctor - [Death Ward](https://youtu.be/HmZYgqBp1gI)
+
+### Chat Wheel
+
+- Crash and burn - [ohnonono](https://admiralbullbot.github.io/playsounds/files/new/ohnonono.ogg)
+- Crowd groan - [covertheexits](https://admiralbullbot.github.io/playsounds/files/bulldog/covertheexits.ogg)
+- Crybaby - [babyrage](https://admiralbullbot.github.io/playsounds/files/bulldog/babyrage.ogg)
+- Frog - [bruh](https://admiralbullbot.github.io/playsounds/files/old/bruh.ogg)
+- Headshake - [malding](https://admiralbullbot.github.io/playsounds/files/bulldog/malding.ogg)
+- Kiss - [lowfuckyou](https://admiralbullbot.github.io/playsounds/files/bulldog/lowfuckyou.ogg)
+
+### Hero Voice Lines
+
+- Weaver: "The pattern is complete!" -
+  ["Ronnie Coleman here I come!"](https://admiralbullbot.github.io/playsounds/files/bulldog/ronnie.ogg)
+
+### Miscellaneous
+
+- High five - [Borat: Not Joke](https://youtu.be/MCapEm8Nu7c?t=93)
