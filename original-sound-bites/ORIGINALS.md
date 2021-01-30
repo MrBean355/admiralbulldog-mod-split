@@ -9,6 +9,7 @@ Links to where the sound bites were taken from.
 - Earthshaker - [Echo Slam](https://admiralbullbot.github.io/playsounds/files/bulldog/skadoosh.ogg)
 - Enigma - [Black Hole](https://youtu.be/kHhtOrZ6qrs?t=141)
 - Kunkka - [Ghost Ship](https://admiralbullbot.github.io/playsounds/files/bulldog/aaah.ogg)
+- Kunkka - [X Marks the Spot](https://admiralbullbot.github.io/playsounds/files/new/sike.ogg)
 - Naga Siren - [Song of the Siren](https://youtu.be/8Rq0Gg6PEac?t=169)
 - Queen of Pain - [Sonic Wave](https://youtu.be/OlOy9zjIdmc?t=26)
 - Witch Doctor - [Death Ward](https://youtu.be/HmZYgqBp1gI)
