@@ -19,6 +19,7 @@ Links to where the sound bites were taken from.
 
 - Bullwhip - [highfuckyou](https://admiralbullbot.github.io/playsounds/files/bulldog/highfuckyou.ogg)
 - Enchanted Mango - [kreygasm](https://admiralbullbot.github.io/playsounds/files/bulldog/seeya.ogg)
+- Mask of Madness - [malding](https://admiralbullbot.github.io/playsounds/files/bulldog/malding.ogg)
 
 ### Chat Wheel
 
