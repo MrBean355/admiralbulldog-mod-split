@@ -1,0 +1,87 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="sonic-wave_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="0.0000000000" vpos="0" h="0.0000000000" zoom="328.5189516706" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="Software" value="Lavf58.45.100"/>
+	</tags>
+	<wavetrack name="scream" isSelected="0" height="71" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="50172">
+				<waveblock start="0">
+					<simpleblockfile filename="e080823d.au" len="50172" min="-0.884714" max="0.999994" rms="0.364786"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="71" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="50172">
+				<waveblock start="0">
+					<simpleblockfile filename="e080837e.au" len="50172" min="-0.884679" max="1.0" rms="0.364786"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="79" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.96190476" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27519">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808a35.au" len="27519" min="-0.796749" max="0.999994" rms="0.369141"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="79" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.96190476" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27519">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808626.au" len="27519" min="-0.79672" max="1.0" rms="0.369141"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="84" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.43979077" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27519">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808b7a.au" len="27519" min="-0.796749" max="0.999994" rms="0.369141"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="84" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.43979077" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27519">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808bbe.au" len="27519" min="-0.79672" max="1.0" rms="0.369141"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="74" minimized="0" channel="0" linked="1" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.92074696" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27519">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808f10.au" len="27519" min="-0.796749" max="0.999994" rms="0.369141"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="scream" isSelected="0" height="74" minimized="0" channel="1" linked="0" mute="0" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="1.92074696" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="27519">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808223.au" len="27519" min="-0.79672" max="1.0" rms="0.369141"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>
