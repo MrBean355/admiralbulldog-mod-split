@@ -15,6 +15,11 @@ Links to where the sound bites were taken from.
 - Queen of Pain - [Sonic Wave](https://youtu.be/OlOy9zjIdmc?t=26)
 - Witch Doctor - [Death Ward](https://youtu.be/HmZYgqBp1gI)
 
+### Items
+
+- Bullwhip - [highfuckyou](https://admiralbullbot.github.io/playsounds/files/bulldog/highfuckyou.ogg)
+- Enchanted Mango - [kreygasm](https://admiralbullbot.github.io/playsounds/files/bulldog/seeya.ogg)
+
 ### Chat Wheel
 
 - Crash and burn - [ohnonono](https://admiralbullbot.github.io/playsounds/files/new/ohnonono.ogg)
