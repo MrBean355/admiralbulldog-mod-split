@@ -17,7 +17,6 @@ Treant Protector       = Trent Protector of Minorities
 @DOTA_FindMatch           = Find Smurfs
 @dota_play_searching      = Finding Smurfs
 @DOTA_Friends_WindowTitle = PAID ACTORS
-!Game is paused           = ResidentSleeper
 !tipped %s1. Well Played! = tipped %s1. Git gud scrub sadKEK
 invulnerable              = ungillable
 Invulnerable              = Ungillable

@@ -25,5 +25,10 @@ dotaMod {
         id("DOTA_Chat_Rune_Bottle_Haste", "%s1 has bottled a <font color='#F62817'>s4</font> rune.")
         id("DOTA_Chat_Rune_Haste_Spotted", "<font color='#F62817'>s4</font> rune here (%s1).")
         id("DOTA_HUD_Rune_Haste", "<font color='#F62817'>s4</font> rune")
+
+        // General
+        id("DOTA_Paused", "ResidentSleeper")
+        id("DOTA_Hud_Paused", "ResidentSleeper")
+        id("DOTA_Hud_Paused_Spectating", "ResidentSleeper")
     }
 }
