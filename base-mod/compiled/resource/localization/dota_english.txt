@@ -3717,6 +3717,11 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"UI_seconds"					"seconds"
 		"UI_refresh"					"REFRESH"
 
+		"UI_days_short"					"days"
+		"UI_hours_short"				"hrs"
+		"UI_minutes_short"				"mins"
+		"UI_seconds_short"				"secs"
+
 		"UI_day_suffix"					"d"
 		"UI_hour_suffix"				"h"
 		"UI_minute_suffix"				"m"
@@ -3804,7 +3809,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"dota_region_automatic_details"		"Automatic (%s1)"
 		"dota_region_us_west"			"KKona West"
 		"dota_region_us_east"			"KKona East"
-		"dota_region_europe"			"DatSheffy Luxembourg"
+		"dota_region_europe"			"Europe West"
 		"dota_region_hong_kong"			"Hong Kong"
 		"dota_region_singapore"			"MingLee Singapore"
 		"dota_region_shanghai"			"Shanghai"
@@ -6887,7 +6892,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"Notification_Item"						"You have received an item!"
 		"Notification_Item_Wide"				"Received Item"
 		"Notification_Action_Taken_Title"		"Thank You"
-		"Notification_Action_Taken"				"We've recently taken action against one or more players you've previously reported for bad conduct. You have received an additional report submission to use. Thanks for your help in making the Dota 2 community a friendlier place."
+		"Notification_Action_Taken"				"We've recently taken action against one or more players you've previously reported for bad conduct.<br /><br />You have received an additional report submission to use. Thanks for your help in making the Dota 2 community a friendlier place."
 		"Notification_Action_Taken_OverwatchMajor"				"We've recently issued a Major Overwatch Conviction against one or more players you've previously reported for bad conduct. You have received an additional report submission to use. Thanks for your help in making the Dota 2 community a friendlier place."
 		"Notification_Action_Taken_OverwatchMinor"				"We've recently issued a Minor Overwatch Conviction against one or more players you've previously reported for bad conduct. You have received an additional report submission to use. Thanks for your help in making the Dota 2 community a friendlier place."
 		"Notification_Action_Taken_Short"		"We've recently taken action against one or more players you've previously reported for bad conduct."
@@ -9419,6 +9424,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"dota_stat_dropdown_networth"		"NET WORTH"
 		"dota_stat_dropdown_fantasy"		"FANTASY POINTS"
 		"dota_stat_dropdown_fantasy_tooltip" "Point Details"
+		"dota_stat_dropdown_frametime"		"FRAME TIME"
 
 		"DOTA_FanSlot"						"Player Fan Slot"
 		"DOTA_ChangingFanSlot"				"Swapping or upgrading pennants while spectating can take a few minutes to update."
@@ -12964,7 +12970,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"dota_tip_beginner_17"				"It is often a good idea to carry a Town Portal Scroll."
 		"dota_tip_beginner_18"				"There are many secret paths hidden in the trees, which are often called \"juke spots\". Use these to escape attacks, or to set up an ambush."
 		"dota_tip_beginner_19"				"Use Dust of Appearance to reveal nearby invisible enemies."
-		"dota_tip_beginner_20"				"One rune will appear in the river every two minutes, either north of the middle lane or to the south. Both Runes will spawn from 40 minutes onward."
+		"dota_tip_beginner_20"				"Runes in the river will appear every two minutes after the four minute mark. One will spawn randomly either north of the middle lane or to the south."
 		"dota_tip_beginner_21"				"If you have a Bottle, picking up a Rune will store it for later use. Storing a Rune will also refill the Bottle."
 		"dota_tip_beginner_22"				"You can select from many player-created Builds for your Hero by using the Build Guide button on the left side of the Top Bar."
 		"dota_tip_beginner_25"				"Check your minimap often! You may discover that you are about to be ambushed."
@@ -13054,7 +13060,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"dota_tip_intermediate_70"			"Most spells have a short cast animation before the effect happens. All items cast their effects instantly with no cast time."
 		"dota_tip_intermediate_71"			"Channeling a Town Portal Scroll will take longer if another hero has teleported to the same area recently."
 		"dota_tip_intermediate_72"			"Does your team have a Medallion of Courage, an Urn of Shadows or a Vladmir's Offering? It can be more effective to build items that benefit the whole team."
-		"dota_tip_intermediate_73"			"Tangoes are twice as effective when used to consume a ward or a tree created by an Iron Branch."
+		"dota_tip_intermediate_73"			"Tangoes are twice as effective when used to consume a tree created by an Iron Branch."
 		"dota_tip_intermediate_74"			"Boots of Travel are canceled if the destination unit dies while channeling."
 		"dota_tip_intermediate_75"			"Stacking a Neutral camp will give you a percentage of the bounty when killed."
 		"dota_tip_intermediate_76"			"The third Roshan kill in a match will drop a consumable Scepter item or a Refresher Shard. The fourth Roshan has both. You can select Roshan to see his inventory and find out what items will drop."
@@ -13157,7 +13163,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 
 	"dota_tip_hero_bloodseeker_1"		"It is possible to use a Town Portal Scroll while Ruptured by Blood Seeker without taking further damage."
 	"dota_tip_hero_bloodseeker_2"		"Be careful when injured; Thirst grants Bloodseeker vision and True Sight on enemies below 25% health."
-	"dota_tip_hero_bloodseeker_4"		"Bloodseeker's Bloodrage increases damage from abilities and items, such as Blood Rite and Rupture, as well as physical attacks."
+	"dota_tip_hero_bloodseeker_4"		"Bloodseeker's Bloodrage provides spell amplification and an attack speed bonus. When cast on allies, it provides half the attack speed bonus."
 	"dota_tip_hero_bloodseeker_5"		"Linken's sphere will block Bloodseeker's Rupture, and may be a worthwhile investment on certain heroes facing Bloodseeker."
 	"dota_tip_hero_bloodseeker_6"		"Bloodseeker's Bloodrage will increase charges on Magic Stick or Magic Wand that can be very useful against him during the laning stage of the game."
 	"dota_tip_hero_bloodseeker_7"		"Bloodseeker's Thirst allows him to exceed the normal limit of 550 move speed."
@@ -13220,7 +13226,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 	"dota_tip_hero_doom_bringer_3" 		"A Linken's Sphere is a great way to block Doom's Doom. Doom can counter this by devouring a neutral creep with a targeted ability, such as the Satyr Banisher, or building an active item, such as a Heaven's Halberd."
 	"dota_tip_hero_doom_bringer_4" 		"Scorched Earth damages nearby enemies and provides Doom with increased movement speed."
 	"dota_tip_hero_doom_bringer_5" 		"A hero that has been Doomed can be killed by their allies when their health gets low. This will deny Doom gold and experience for the kill."
-	"dota_tip_hero_doom_bringer_6" 		"Upgrading Doom with an Aghanim's Scepter grants Infernal Blade a Break effect, making it very efficient against enemies with powerful passive abilities, like Phantom Assassin or Spirit Breaker."
+	"dota_tip_hero_doom_bringer_6" 		"Upgrading Doom with an Aghanim's Scepter grants Doom a Break effect, making it very efficient against enemies with powerful passive abilities, like Phantom Assassin or Spirit Breaker."
 
 	"dota_tip_hero_dragon_knight_1"		"Dragon Knight's Elder Dragon Form Corrosive Breath affects structures in addition to units, making it an effective siege ability."
 	"dota_tip_hero_dragon_knight_2" 	"Dragon Knight's Breathe Fire damage reduction is very effective tool when trading attacks with an opponent or mitigating an enemy's ability to last-hit creeps in lane."
@@ -13311,7 +13317,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 	"dota_tip_hero_meepo_1"				"Meepo gains XP or gold when any of his clones gain XP or gold. Meepo dies whenever any of his clones die."
 
 	"dota_tip_hero_mirana_1"			"Mirana's Sacred Arrow will fly through units friendly to Mirana."
-	"dota_tip_hero_mirana_2"			"Mirana's Aghanim's Scepter Upgrade will not trigger Star Storm if she is invisible, allowing her to strategically position herself before using it."
+	"dota_tip_hero_mirana_2"			"With Mirana's Moonlight Shadow and Smoke of Deceit, a team can invisibly move around the map for a very long time."
 	"dota_tip_hero_mirana_3"			"Mirana's Sacred Arrow has a considerable travel time. A teammate that can set up a disable will greatly increase Mirana's chance to hit enemy heroes."
 	"dota_tip_hero_mirana_4"			"Mirana's Sacred Arrow can be very useful for scouting dark areas of the map."
 	"dota_tip_hero_mirana_5"			"Mirana's Moonlight Shadow can be used offensively to set up sneak attacks on the enemy team."
@@ -13323,7 +13329,6 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 	"dota_tip_hero_morphling_1"			"Silence can be effective at locking down a slippery Morphling."
 	"dota_tip_hero_morphling_2"			"Morphling can use items and abilities during Waveform, for example Ethereal Blade or Teleport Scroll."
 	"dota_tip_hero_morphling_3"			"Morphling can use items during Waveform, for example Ethereal Blade or Teleport Scroll."
-	"dota_tip_hero_morphling_4"			"After returning from Morph, Morphling's health and mana are reset to their values before the morph."
 	"dota_tip_hero_morphling_5"			"Abilities that cancel healing, such as Ronnie Coleman's Ice Blast will prevent Morphling from gaining health when he's shifting attributes."
 	"dota_tip_hero_morphling_6"			"Morphling will continue shifting attributes even if he's disabled or silenced."
 
@@ -13419,9 +13424,9 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 
 	"dota_tip_hero_shredder_1"			"When Timbersaw is affected by Break, he will not gain additional stacks of Reactive armor, but existing stacks will continue to provide armor and health regen."
 
-	"dota_tip_hero_silencer_1"			"Silencer's Glaives of Wisdom deals pure damage, which cannot be mitigated with magic resistance but does not pierce spell immunity, unless Silencer has an Aghanim's Scepter."
+	"dota_tip_hero_silencer_1"			"Silencer's Glaives of Wisdom deals pure damage, which cannot be mitigated with magic resistance but does not pierce spell immunity."
 
-	"dota_tip_hero_skeleton_king_1"		"Wraith King's Reincarnate will trigger even if Wraith King is affected by Break. It will not trigger if Wraith King has insufficient mana; a talent can reduce this cost to 0."
+	"dota_tip_hero_skeleton_king_1"		"Wraith King's Reincarnate will trigger even if Wraith King is affected by Break. It will not trigger if Wraith King has insufficient mana. Aghanim's Shard reduces the mana cost to 0."
 
 	"dota_tip_hero_skywrath_mage_1"		"Skywrath Mage's Arcane Bolt does substantially more damage based on Skywrath's intelligence."
 
@@ -13447,7 +13452,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 	"dota_tip_hero_sven_2"				"Sven's War Cry grants you increased movement speed, along with increased Armor and Bonus Damage for you and nearby allies."
 	"dota_tip_hero_sven_3"				"Sven relies on being close to enemies to deal massive amounts of damage. Limiting his mobility with items like Rod of Atos or abilities like Nature's Prophet's Sprout is great for mitigating his damage during God's Strength."
 	"dota_tip_hero_sven_4"				"Most of Sven's damage comes from his physical attacks and can be negated with an item like Heaven's Halberd."
-	"dota_tip_hero_sven_5"				"Avoiding Sven's attacks with sources of evasion, such as Butterfly or Solar Crest, or being physically immune, for example with Ghost Scepter, are effective ways of dealing with Sven's damage."
+	"dota_tip_hero_sven_5"				"Avoiding Sven's attacks with sources of evasion, such as Butterfly or Heaven's Halberd, or being physically immune, for example with Ghost Scepter, are effective ways of dealing with Sven's damage."
 	"dota_tip_hero_sven_6"				"Sven's God's Strength can be useful not only in team fights, but also taking objectives like killing enemy towers or Roshan."
 
 	"dota_tip_hero_techies_1"			"Techies' Proximiy Mines are automatically revealed when an enemy units walks nearby. Stasis Traps and Remote Mines require True Sight to reveal."
@@ -25359,6 +25364,9 @@ Special Techies Taunt"
     "DOTA_AA_TimeExpired_Message"           "You have reached your online time limit for today. Please take a break and try tomorrow after 8AM."
     "DOTA_AA_TimeExpiredCurfew_Message"     "You can't play this game between 10PM and 8AM. Please take a break."
 
+	"DOTA_Banned_Title"			"Banned"
+	"DOTA_Banned"				"Your account has been banned from playing Dota 2."
+
 	"DOTA_AntiAddiction_Initial_With_ID_18Plus"		"Last time online: %s1\nLast IP Address: %s2"
 	"DOTA_AntiAddiction_Initial_With_ID_Under_18"	"You are under 18. The anti addiction system is in effect.\nLast time online: %s1\nLast IP Address: %s2"
 	"DOTA_AntiAddiction_Initial_No_ID"				"Your account is not registered.\nLast time online: %s1\nLast IP Address: %s2"
@@ -30295,6 +30303,8 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_GiftRestrictions_UnavailableFriends"		"Several of your friends are currently unavailable to receive gifts:"
 	"DOTA_GiftRestrictions_FriendshipAge_Default"	"Since you do not have a <a href=\"http://store.steampowered.com/mobile/\">Mobile Authenticator</a> on your account, you may only gift to players you have been friends with for at least {t:d:T:friendship_age_requirement}. With a <a href=\"http://store.steampowered.com/mobile/\">Mobile Authenticator</a> on your account, this limit decreases to {t:d:T:friendship_age_requirement_two_factor}. Please read our <a href=\"http://store.steampowered.com/news/20631/\">blog post</a> for more details."
 	"DOTA_GiftRestrictions_FriendshipAge_TwoFactor"	"Since you have a <a href=\"http://store.steampowered.com/mobile/\">Mobile Authenticator</a> on your account, you may gift to any players that you have been friends with for at least {t:d:T:friendship_age_requirement_two_factor}."
+	"DOTA_GiftRestrictions_FriendshipAge_Default_CN"	"Since you do not have a Mobile Authenticator on your account, you may only gift to players you have been friends with for at least {t:d:T:friendship_age_requirement}. With a Mobile Authenticator on your account, this limit decreases to {t:d:T:friendship_age_requirement_two_factor}."
+	"DOTA_GiftRestrictions_FriendshipAge_TwoFactor_CN"	"Since you have a Mobile Authenticator on your account, you may gift to any players that you have been friends with for at least {t:d:T:friendship_age_requirement_two_factor}."
 	"DOTA_GiftRestrictions_FriendshipAge_PerfectWorld"	"You may gift to any players that you have been friends with for at least {t:d:T:friendship_age_requirement_two_factor}."
 	"DOTA_GiftRestrictions_LearnMore"	"Learn more about gift restrictions on <a href=\"https://help.steampowered.com/en/wizard/HelpWhyCantITrade\">Steam's Help Site</a>."
 	"DOTA_GiftRestrictions_Loading"	"Retrieving Gift Information"
@@ -30783,7 +30793,20 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_GameMode_AbilityDraft_ChangeLog_Title"  "Change Log"
 	"DOTA_GameMode_AbilityDraft_ChangeLog_Tooltip"  "View the latest updates to Ability Draft"
 	"DOTA_GameMode_AbilityDraft_ChangeLog"	"
-		<b><font color='#ffffff'>Latest Update</font></b>
+		<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#ffffff'>Latest Update</font></b>
+		<br>• Shadowraze now has 3 charges and has been updated to use mid-range distance.
+		<br>• Skull Basher now bashes, even if Timelock is drafted.
+		<br>• Blur Scepter upgrade now increments non-ultimate charge-based abilities by 1 when a kill occurs.
+		<br>• Fixed Overcharge ending early on owning hero if tether was owned by a teammate and broken.
+		<br>• Added custom effects for when Tree Grab used.
+		<br>• Fixed Io's model disappearing if Tree Grab was used.
+		<br>• Fixed Hero switching back to default model if Tree Grab used while in different form (Dragon Form, Metamorphosis, Flesh Golem etc.)
+		<br>• Increased talent tree bonus gold:
+		<br><font color='#7488a1'>&nbsp;&nbsp;&nbsp;150→300
+		<br>&nbsp;&nbsp;&nbsp;250→500
+		<br>&nbsp;&nbsp;&nbsp;500→750
+		<br>&nbsp;&nbsp;&nbsp;750→1250</font>
+		<br><br><b><font color='#ffffff'>January 13, 2021</font></b>
 		<br>• Fixed Take Aim active not providing bonus range to melee units.
 		<br>• Fixed Liquid Fire sometimes not working when drafted on Lich.
 		<br>• Fixed Poison Sting not applying to Plague Wards when both drafted.
@@ -32382,6 +32405,7 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_LaneSelectionOther"		"Support"
 	"DOTA_LaneSelectionSoftSupport"	"Soft Support"
 	"DOTA_LaneSelectionHardSupport"	"Hard Support"
+	"DOTA_LaneSelectionNoneAssigned" "No Roles Assigned"
 
     "DOTA_LaneSelection_RoleCall"           "Role Call"
     "DOTA_LaneSelection_RoleCall_Reward"    "+25"
@@ -33390,7 +33414,7 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_DPCTeams_ToggleFavorite"	"Click to toggle whether this team is a favorite."
 	"DOTA_DPCTeams_Favorites"		"Favorites"
 	"DOTA_DPCTeams_AllTeams"		"All Teams"
-	"DOTA_DPCTeams_NoFavorites"		"Choose favorites from the All Teams tab to feature them here."
+	"DOTA_DPCTeams_NoFavorites"		"Choose favorites from the <a class='AllTeamsLink' href=\"event:DOTATeamScheduleAllTeamSelected()\">All Teams</a> tab to feature them here."
 
 	"DOTA_DPCFavoriteError_Title"					"Unable to Adjust Favorite"
 	"DOTA_DPCFavoriteError_InternalError"			"Internal Error"
@@ -36926,6 +36950,23 @@ Each region has a live leaderboard that will be used to calculate the guild's ti
 		"DOTA_Diretide2020_Event_Details_Title" "Roshan hath returned!"
 		"DOTA_Diretide2020_Event_Details_" ""
 
+
+		"DOTA_DDB_Watch" "Watch"
+
+		"DOTA_DDB_Promo_Announcement" "Announcement"
+		"DOTA_DDB_Promo_Teaser" "Teaser Trailer"
+		"DOTA_DDB_Promo_Trailer" "Main Trailer"
+		"DOTA_DDB_Promo_Release" "Series Premiere"
+
+		"DOTA_DDB_Promo_Call_Teaser" "Watch Teaser Trailer"
+		"DOTA_DDB_Promo_Call_ComingSoon" "Coming to Netflix MARCH 25, 2021"
+
+		"DOTA_DDB_Promo_Teaser_Date" "February 19th, 2021"
+		"DOTA_DDB_Promo_Trailer_Date" "March 1st, 2021"
+		"DOTA_DDB_Promo_Release_Date" "March 25th, 2021"
+
+		"DOTA_DDB_Promo_Intro" "Dragon Knight and Mirana face demons and gods with unexpected allies in this all-new anime series premiering on Netflix. Discover heroes both old and new as Dota 2 comes to life like never before."
+
 		"DOTA_Immortal_Movie_Label"     "Immortal Ability Effect"
 		"DOTA_Emblem_Movie_Label"     "Emblem Effect"
 
@@ -37070,15 +37111,17 @@ If you don't feel that you were able to dedicate the appropriate attention level
 		"DOTA_Overwatch_Case_Help_1"				"Watch the marked sections of the timeline.  These sections indicate the reporting players' best estimate of where the incidents took place. By default, the replay will automatically skip to the next marked section. You can disable Auto Skip using the checkbox or by moving the scrubber."
 		"DOTA_Overwatch_Case_Help_2_Title"			"Players may be flagged as Scripting/Hacking, Griefing, or Suspicious."
 		"DOTA_Overwatch_Case_Help_2"				"<b>For Scripting/Hacking,</b> Be on the lookout for players cheating through the use of scripts or cheats. <br><br><b>For Griefing,</b> be on the lookout for negative actions towards other players such as feeding, ability abuse, etc.<br><br><b>Suspicious</b> markers may be a mix of both."
-		"DOTA_Overwatch_Case_Help_3_Title"			"After reviewing the marked sections, click the Submit Resoultion button to lock-in your verdict."
+		"DOTA_Overwatch_Case_Help_3_Title"			"After reviewing the marked sections, click the Submit Resolution button to lock-in your verdict."
 		"DOTA_Overwatch_Case_Help_3"				"You will be presented with a short form and asked whether you think the player is guilty of Cheating, Griefing or both. If you are unsure, you can review the case again or mark the case as such on the conviction screen."
 		"DOTA_Overwatch_Convict_Error_Header"		"Could Not Submit Conviction"
-		"DOTA_Overwatch_Convict_Error_Body"			"An error occurred while submitting your conviction.  Please try again later."
+		"DOTA_Overwatch_Convict_Error_Body"			"An error occurred ({d:error_code}) while submitting your conviction.  Please try again later."
 		"DOTA_Overwatch_Convict_Success_Header"		"Conviction Submitted"
 		"DOTA_Overwatch_Convict_Success_Body"		"Feedback submitted successfully.<br>Thank you for helping out the community."
 		"DOTA_Overwatch_No_More_Reports"			"You don't have any reports left."
 		"DOTA_Overwatch_Reports_Left"				"You have {d:num_reports_remaining} reports left."
 		"DOTA_Overwatch_Report_Left"				"You have 1 report left."
+		"DOTA_Overwatch_Download_Error_Header"		"Case Download Error"
+		"DOTA_Overwatch_Download_Error_Body"		"Unable to download the Overwatch case.  Please try again later."
 
 		"DOTA_DPCScheduleVs"	"vs."
 		"DOTA_DPCMonth0"	"JAN"
@@ -37105,6 +37148,20 @@ If you don't feel that you were able to dedicate the appropriate attention level
 		"DOTA_DPCScheduleAllTeams"	"ALL"
 		"DOTA_DPCScheduleDivision1"	"DIV I"
 		"DOTA_DPCScheduleDivision2"	"DIV II"
+
+		"DOTA_SteamChinaInfo_Header"					"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text1"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text2"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text3"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text4"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text5"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text6"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text7"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text8"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text9"						"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text10"					"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text11"					"lorem ipsum"
+		"DOTA_SteamChinaInfo_Text12"					"lorem ipsum"
 	}
 }
 
