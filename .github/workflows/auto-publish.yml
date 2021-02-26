@@ -2,7 +2,7 @@ name: Automated release
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   schedule:
     - cron: '0 */6 * * *'
 
@@ -10,7 +10,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
+      - name: Checkout main
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: main
+
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -36,9 +40,24 @@ jobs:
         run: |
           ./gradlew publishMod
 
-      - name: Commit & push changes
+      - name: Commit & push main changes
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'mrbean355@users.noreply.github.com'
+          git commit -am "Add the latest strings files" || true
+          git push
+
+      - name: Checkout develop
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: develop
+
+      - name: Repackage develop mods
+        run: |
+          chmod +x gradlew
+          ./gradlew buildMod -Pcompiler.fullCompile=false
+
+      - name: Commit & push develop changes
+        run: |
           git commit -am "Add the latest strings files" || true
           git push
