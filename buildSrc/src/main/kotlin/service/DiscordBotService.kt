@@ -32,18 +32,18 @@ interface DiscordBotService {
 
     @PATCH("mods/{key}")
     fun patchMod(
-            @Path("key") key: String,
-            @Query("hash") hash: String,
-            @Query("size") size: Int,
-            @Query("token") token: String
+        @Path("key") key: String,
+        @Query("hash") hash: String,
+        @Query("size") size: Int,
+        @Query("token") token: String
     ): Call<Unit>
 
     companion object {
         val INSTANCE = Retrofit.Builder()
-                .baseUrl(hostUrl())
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-                .create<DiscordBotService>()
+            .baseUrl(hostUrl())
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create<DiscordBotService>()
 
         private fun hostUrl(): String {
             return if (System.getenv("TARGET_ROONS_ENV") == "prod") {
@@ -56,6 +56,6 @@ interface DiscordBotService {
 }
 
 data class DotaMod(
-        val key: String,
-        val hash: String
+    val key: String,
+    val hash: String
 )

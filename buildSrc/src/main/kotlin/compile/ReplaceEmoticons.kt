@@ -72,7 +72,7 @@ private fun replaceInFile(input: File, mappings: Map<String, Int>) {
                 }
             }
         }
-        output.appendln(newLine)
+        output.appendLine(newLine)
     }
 
     if (toReplace.isNotEmpty()) {

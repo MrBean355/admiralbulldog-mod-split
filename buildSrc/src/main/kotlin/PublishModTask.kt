@@ -49,12 +49,12 @@ open class PublishModTask : DefaultTask() {
 
         println("Changes made; uploading...")
         s3.putObject(
-                PutObjectRequest.builder()
-                        .bucket(MODS_BUCKET)
-                        .acl(PUBLIC_READ)
-                        .key("$modKey/${vpk.name}")
-                        .build(),
-                RequestBody.fromFile(vpk)
+            PutObjectRequest.builder()
+                .bucket(MODS_BUCKET)
+                .acl(PUBLIC_READ)
+                .key("$modKey/${vpk.name}")
+                .build(),
+            RequestBody.fromFile(vpk)
         )
 
         RemoteMods.updateModHash(modKey, localHash, (vpk.length() / 1024).toInt())

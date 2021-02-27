@@ -37,9 +37,9 @@ interface GitHubService {
 
     companion object {
         val INSTANCE = Retrofit.Builder()
-                .baseUrl("http://unused")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-                .create<GitHubService>()
+            .baseUrl("http://unused")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create<GitHubService>()
     }
 }
