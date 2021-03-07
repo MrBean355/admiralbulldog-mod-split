@@ -31,12 +31,12 @@ object RemoteMods {
         return body
     }
 
-    fun updateModHash(key: String, newHash: String, size: Int) {
+    fun updateModHash(key: String, newHash: String, size: Int, message: String?) {
         val token = System.getenv("AUTH_TOKEN")
         require(!token.isNullOrBlank()) {
             "No token provided via AUTH_TOKEN"
         }
-        val response = DiscordBotService.INSTANCE.patchMod(key, newHash, size, token).execute()
+        val response = DiscordBotService.INSTANCE.patchMod(key, newHash, size, token, message).execute()
         if (!response.isSuccessful) {
             error("Failed to update mod hash: $response")
         }

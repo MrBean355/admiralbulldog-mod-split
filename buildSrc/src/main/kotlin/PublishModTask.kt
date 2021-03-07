@@ -22,6 +22,7 @@ import software.amazon.awssdk.regions.Region
 import software.amazon.awssdk.services.s3.S3Client
 import software.amazon.awssdk.services.s3.model.ObjectCannedACL.PUBLIC_READ
 import software.amazon.awssdk.services.s3.model.PutObjectRequest
+import util.Environment
 import util.hash
 
 private const val VPK_FILE = "pak01_dir.vpk"
@@ -35,6 +36,7 @@ open class PublishModTask : DefaultTask() {
 
     @TaskAction
     fun run() {
+        Environment.init(project.properties)
         val vpk = project.file(OUTPUT_VPK_FILE)
         require(vpk.exists()) { "VPK file does not exist" }
         val localHash = vpk.hash()
@@ -49,14 +51,19 @@ open class PublishModTask : DefaultTask() {
 
         println("Changes made; uploading...")
         s3.putObject(
-                PutObjectRequest.builder()
-                        .bucket(MODS_BUCKET)
-                        .acl(PUBLIC_READ)
-                        .key("$modKey/${vpk.name}")
-                        .build(),
-                RequestBody.fromFile(vpk)
+            PutObjectRequest.builder()
+                .bucket(MODS_BUCKET)
+                .acl(PUBLIC_READ)
+                .key("$modKey/${vpk.name}")
+                .build(),
+            RequestBody.fromFile(vpk)
         )
 
-        RemoteMods.updateModHash(modKey, localHash, (vpk.length() / 1024).toInt())
+        val message = if (Environment.sendMessage) {
+            val friendlyName = remoteMod.name.removeSuffix(" mod")
+            "The <b>$friendlyName</b> mod has been updated to work with the latest Dota 2 update."
+        } else null
+
+        RemoteMods.updateModHash(modKey, localHash, (vpk.length() / 1024).toInt(), message)
     }
 }

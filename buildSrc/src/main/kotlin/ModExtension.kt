@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-import compile.EXACT_REPLACE
 import compile.SINGLE_REPLACE
 import org.gradle.api.Action
 
@@ -47,10 +46,6 @@ open class ModExtension {
 
 class Replacements {
     val replacements = mutableMapOf<String, String>()
-
-    fun exact(match: String, replacement: String) {
-        replacements["$EXACT_REPLACE$match"] = replacement
-    }
 
     fun id(id: String, replacement: String) {
         replacements["$SINGLE_REPLACE$id"] = replacement

@@ -20,6 +20,7 @@ import compile.compileSounds
 import compile.renameFiles
 import compile.replaceEmoticons
 import compile.replaceStrings
+import kotlinx.coroutines.*
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 import util.Environment
@@ -35,9 +36,8 @@ open class BuildModTask : DefaultTask() {
     var emoticons: Map<String, Int> = emptyMap()
 
     @TaskAction
-    fun run() {
+    fun run() = runBlocking(Dispatchers.IO) {
         Environment.init(project.properties)
-
         val projectOutput = project.file(COMPILED_DIR).also {
             if (Environment.fullCompile) {
                 it.deleteRecursively()
@@ -45,12 +45,14 @@ open class BuildModTask : DefaultTask() {
             it.mkdirs()
         }
 
-        project.replaceStrings(projectOutput, replacements)
-        replaceEmoticons(projectOutput, emoticons)
+        coroutineScope {
+            launch { replaceStrings(projectOutput, replacements) }
+            launch { replaceEmoticons(projectOutput, emoticons) }
+        }
 
         if (!Environment.fullCompile) {
             exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)
-            return
+            return@runBlocking
         }
 
         val contentDir = File(Environment.dotaRoot, "content/dota_addons/${project.name}").also {
@@ -63,12 +65,15 @@ open class BuildModTask : DefaultTask() {
         }
 
         project.projectDir.listFiles().orEmpty()
-                .filter { it.isDirectory && it.name != COMPILED_DIR }
-                .forEach { it.copyRecursively(File(contentDir, it.name)) }
+            .filter { it.isDirectory && it.name != COMPILED_DIR }
+            .forEach { it.copyRecursively(File(contentDir, it.name)) }
 
-        compileImages(contentDir, compilerOutput)
-        compileSounds(contentDir)
-        compileMaterials(contentDir)
+        coroutineScope {
+            launch { compileImages(contentDir, compilerOutput) }
+            launch { compileSounds(contentDir) }
+            launch { compileMaterials(contentDir) }
+        }
+
         renameFiles(compilerOutput, fileRenames)
 
         compilerOutput.copyRecursively(projectOutput)

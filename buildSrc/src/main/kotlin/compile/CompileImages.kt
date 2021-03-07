@@ -35,14 +35,14 @@ fun compileImages(sourceDir: File, compiledDir: File) {
     val manifestFile = File(imagesRoot, MANIFEST_FILE)
 
     val xml = buildString {
-        appendln("<root>")
-        appendln("  <Panel>")
+        appendLine("<root>")
+        appendLine("  <Panel>")
         allFiles.forEach {
             check(it.endsWith(SUPPORTED_FILE_TYPE)) { "Unsupported file type: $it" }
-            appendln("    <Image src=\"file://{images}/$it\" />")
+            appendLine("    <Image src=\"file://{images}/$it\" />")
         }
-        appendln("  </Panel>")
-        appendln("</root>")
+        appendLine("  </Panel>")
+        appendLine("</root>")
     }
 
     manifestFile.writeText(xml)
@@ -56,7 +56,7 @@ private fun File.findAllFiles(items: MutableList<String>) {
         listFiles()?.forEach { it.findAllFiles(items) }
     } else {
         items += absolutePath
-                .substringAfter(IMAGES_PATH)
-                .replace(File.separatorChar, '/')
+            .substringAfter(IMAGES_PATH)
+            .replace(File.separatorChar, '/')
     }
 }

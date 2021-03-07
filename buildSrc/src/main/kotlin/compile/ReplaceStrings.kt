@@ -16,24 +16,21 @@
 
 package compile
 
-import org.gradle.api.Project
 import service.GitHubService
 import java.io.File
 
-private const val REPLACEMENTS_FILE = "replacements.txt"
 private const val TARGET_DIRECTORY = "resource/localization"
 private val TARGET_FILES = arrayOf("abilities_english.txt", "dota_english.txt", "hero_chat_wheel_english.txt")
 
-fun Project.replaceStrings(compiledDir: File, replacements: Map<String, String>) {
-    val input = file(REPLACEMENTS_FILE)
-    if (!input.exists()) {
+fun replaceStrings(compiledDir: File, replacements: Map<String, String>) {
+    if (replacements.isEmpty()) {
         return
     }
     val stringsDirectory = File(compiledDir, TARGET_DIRECTORY).also {
         it.deleteRecursively()
         it.mkdirs()
     }
-    val mappings = loadReplacements(input, replacements)
+    val mappings = loadReplacements(replacements)
     TARGET_FILES.forEach {
         downloadStringsFile(it, stringsDirectory)
         replaceInFile(File(stringsDirectory, it), mappings)
@@ -57,48 +54,24 @@ private fun downloadStringsFile(fileName: String, destination: File): File {
 private val FILE_ENTRY_PATTERN = Regex("^\\s*\"(.*)\"\\s*\"(.*)\".*$")
 
 // Symbols used in the mappings file:
-private const val SEPARATOR = '='
-const val EXACT_REPLACE = '!'
 const val SINGLE_REPLACE = '@'
 private const val COMMENT = '#'
 
 private class Mappings {
     val contains = mutableMapOf<String, String>()
-    val exact = mutableMapOf<String, String>()
     val single = mutableMapOf<String, String>()
 }
 
-private fun loadReplacements(replacements: File, combine: Map<String, String>): Mappings {
-    require(replacements.exists()) { "Replacements file doesn't exist: ${replacements.absolutePath}" }
+private fun loadReplacements(combine: Map<String, String>): Mappings {
     val mappings = Mappings()
 
     combine.forEach {
         val key = it.key
         when {
-            key.startsWith(EXACT_REPLACE) -> mappings.exact += key.drop(1) to it.value
             key.startsWith(SINGLE_REPLACE) -> mappings.single += key.drop(1) to it.value
             else -> mappings.contains += key to it.value
         }
     }
-
-    replacements.readLines()
-            .map { it.trim() }
-            .filter { it.isNotEmpty() }
-            .filter { !it.startsWith(COMMENT) }
-            .forEach { line ->
-                val parts = line
-                        .substringBefore(COMMENT)
-                        .split(SEPARATOR)
-
-                require(parts.size == 2) { "Invalid syntax: $line" }
-                val key = parts.first().trim()
-                val value = parts[1].trim()
-                when {
-                    key.startsWith(EXACT_REPLACE) -> mappings.exact += key.drop(1) to value
-                    key.startsWith(SINGLE_REPLACE) -> mappings.single += key.drop(1) to value
-                    else -> mappings.contains += key to value
-                }
-            }
 
     return mappings
 }
@@ -109,21 +82,20 @@ private fun replaceInFile(input: File, mappings: Mappings) {
     input.forEachLine { line ->
         val match = FILE_ENTRY_PATTERN.matchEntire(line)
         if (match == null) {
-            output.appendln(line)
+            output.appendLine(line)
         } else {
             val key = match.groupValues[1]
             val oldValue = match.groupValues[2]
             var newValue = oldValue
-            when {
-                key in mappings.single -> newValue = mappings.single[key]!!
-                oldValue in mappings.exact -> newValue = mappings.exact[oldValue]!!
+            when (key) {
+                in mappings.single -> newValue = mappings.single.getValue(key)
                 else -> {
                     mappings.contains.forEach { (k, v) ->
-                        newValue = newValue.replace(k, v)
+                        newValue = newValue.replace(Regex("""\b${Regex.escape(k)}\b"""), v)
                     }
                 }
             }
-            output.appendln(line.replace("\"$oldValue\"", "\"$newValue\""))
+            output.appendLine(line.replace("\"$oldValue\"", "\"$newValue\""))
         }
     }
     input.writeText(output.toString())
