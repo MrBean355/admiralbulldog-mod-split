@@ -35,7 +35,8 @@ interface DiscordBotService {
         @Path("key") key: String,
         @Query("hash") hash: String,
         @Query("size") size: Int,
-        @Query("token") token: String
+        @Query("token") token: String,
+        @Query("message") message: String?
     ): Call<Unit>
 
     companion object {
@@ -57,5 +58,6 @@ interface DiscordBotService {
 
 data class DotaMod(
     val key: String,
+    val name: String,
     val hash: String
 )
