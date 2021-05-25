@@ -20,8 +20,12 @@ import compile.compileSounds
 import compile.renameFiles
 import compile.replaceEmoticons
 import compile.replaceStrings
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import org.gradle.api.DefaultTask
+import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.TaskAction
 import util.Environment
 import util.exec
@@ -31,8 +35,13 @@ private const val COMPILED_DIR = "compiled"
 private const val OUTPUT_VPK = "pak01_dir.vpk"
 
 open class BuildModTask : DefaultTask() {
+    @Input
     var replacements: Map<String, String> = emptyMap()
+
+    @Input
     var fileRenames: Map<String, String> = emptyMap()
+
+    @Input
     var emoticons: Map<String, Int> = emptyMap()
 
     @TaskAction
