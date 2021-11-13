@@ -1,0 +1,5 @@
+sequence-rgba 0
+frame chat_icon_left.tga 1
+
+sequence-rgba 1
+frame chat_icon_right.tga 1
