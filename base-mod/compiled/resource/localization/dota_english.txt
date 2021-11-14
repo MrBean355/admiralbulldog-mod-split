@@ -978,7 +978,7 @@
 		"dota_watch_totalprize"				"Total Prize Pool: $%s1 (Contributed: $%s3)"
 
 		"DOTA_Chat_Rune_DoubleDamage"	"%s1 activated a <font color='#82CAFF'>Double Damage</font> rune."
-		"DOTA_Chat_Rune_Haste"			"%s1 activated a <font color='#F62817'>s4</font> rune."
+		"DOTA_Chat_Rune_Haste"			"%s1 activated an <font color='#F62817'>s4</font> rune."
 		"DOTA_Chat_Rune_Illusion"		"%s1 activated an <font color='#FFD700'>Illusion</font> rune."
 		"DOTA_Chat_Rune_Invisibility"	"%s1 activated an <font color='#8B008B'>Invisibility</font> rune."
 		"DOTA_Chat_Rune_Regeneration"	"%s1 activated a <font color='#7FFF00'>Regeneration</font> rune."
@@ -988,7 +988,7 @@
 		"DOTA_Chat_Rune_XP"			"%s1 activated an <font color='#8B008B'>XP</font> rune."
 
 		"DOTA_Chat_Rune_Bottle_DoubleDamage"	"%s1 has bottled a <font color='#82CAFF'>Double Damage</font> rune."
-		"DOTA_Chat_Rune_Bottle_Haste"			"%s1 has bottled a <font color='#F62817'>s4</font> rune."
+		"DOTA_Chat_Rune_Bottle_Haste"			"%s1 has bottled an <font color='#F62817'>s4</font> rune."
 		"DOTA_Chat_Rune_Bottle_Illusion"		"%s1 has bottled an <font color='#FFD700'>Illusion</font> rune."
 		"DOTA_Chat_Rune_Bottle_Invisibility"	"%s1 has bottled an <font color='#8B008B'>Invisibility</font> rune."
 		"DOTA_Chat_Rune_Bottle_Regeneration"	"%s1 has bottled a <font color='#7FFF00'>Regeneration</font> rune."

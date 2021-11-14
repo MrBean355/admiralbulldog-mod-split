@@ -28,8 +28,8 @@ dotaMod {
         id("DOTA_Tooltip_rune_haste", "s4")
         id("DOTA_Tooltip_modifier_rune_haste", "s4")
         id("DOTA_Tooltip_Ability_item_bottle_haste", "Rune: s4")
-        id("DOTA_Chat_Rune_Haste", "%s1 activated a <font color='#F62817'>s4</font> rune.")
-        id("DOTA_Chat_Rune_Bottle_Haste", "%s1 has bottled a <font color='#F62817'>s4</font> rune.")
+        id("DOTA_Chat_Rune_Haste", "%s1 activated an <font color='#F62817'>s4</font> rune.")
+        id("DOTA_Chat_Rune_Bottle_Haste", "%s1 has bottled an <font color='#F62817'>s4</font> rune.")
         id("DOTA_Chat_Rune_Haste_Spotted", "<font color='#F62817'>s4</font> rune here (%s1).")
         id("DOTA_HUD_Rune_Haste", "<font color='#F62817'>s4</font> rune")
 
