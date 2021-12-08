@@ -41,7 +41,7 @@
 	"5"
 	{
 		"image_name" "crazy.png"
-		"ms_per_frame" "100"
+		"ms_per_frame" "50"
 		"aliases"
 		{
 			"0" "crazy"
