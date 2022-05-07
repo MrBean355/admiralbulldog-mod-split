@@ -3905,6 +3905,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
         "dota_region_pw_unicom_tianjin" "MINGLEE UC 2"
 		"dota_region_dubai"				"ANELE Dubai"
 		"dota_region_chile"				"Laden Chile"
+		"dota_region_argentina"			"Argentina"
 		"dota_region_peru"				"Laden Peru"
 		"dota_region_india"				"ANELE India"
 		"dota_region_japan"				"AYAYA Japan"
