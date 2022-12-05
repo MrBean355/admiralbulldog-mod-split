@@ -26388,6 +26388,9 @@ To join as an experienced player, you must have at least {d:new_player_req_games
 	"DOTA_Banned_Title"			"Banned"
 	"DOTA_Banned"				"Your account has been banned from playing Dota 2."
 
+	"DOTA_China_SpecialDisabled_Title" "Disabled"
+	"DOTA_China_SpecialDisabled" "Dear players, in response to relevant notice, title name servers will be out of service from 0:00 to 23:59 on Dec. 6, 2022. Thank you for your support."
+
 	"DOTA_AntiAddiction_Initial_With_ID_18Plus"		"Last time online: %s1\nLast IP Address: %s2"
 	"DOTA_AntiAddiction_Initial_With_ID_Under_18"	"You are under 18. The anti addiction system is in effect.\nLast time online: %s1\nLast IP Address: %s2"
 	"DOTA_AntiAddiction_Initial_No_ID"				"Your account is not registered.\nLast time online: %s1\nLast IP Address: %s2"
@@ -36214,6 +36217,9 @@ With early pressure heroes like Zeus and Death Prophet making appearances, split
 	"DOTA_Plus_Fall2022_Update_Title"						"Fall 2022 Season Update"
 	"DOTA_Plus_Fall2022_Update_Desc"						"A new season of quests, a limited-time Treasure, and more have been added to Dota Plus."
 
+	"DOTA_Plus_Winter2022_Update_Title"						"Winter 2022 Season Update"
+	"DOTA_Plus_Winter2022_Update_Desc"						"A new season of quests, a limited-time Treasure, and more have been added to Dota Plus."
+
 	"DOTA_Plus_Autumn_Assitant_Title"						"New Assistant Features"
 	"DOTA_Plus_Autumn_Assitant_Desc"						"Plus subscribers can now use the Avoid Player feature, friends and foes suggestor, Ward Suggestions, and other assistant features."
 
@@ -37526,6 +37532,11 @@ Each region has a live leaderboard that will be used to calculate the guild's ti
 		"DOTA_PlusSeason_SeasonFall2022_Quests"					"Fall 2022 Quests"
 		"DOTA_PlusSeason_SeasonFall2022_Subtitle"				"The Fall 2022 Season will end December 1st, 2022."
 		"DOTA_PlusSeason_SeasonFall2022_TreasureDescription"	"Available exclusively until the end of the Fall 2022 season on December 1st, 2022."
+
+		"DOTA_PlusSeason_SeasonWinter2022_Name"					"Winter 2022"
+		"DOTA_PlusSeason_SeasonWinter2022_Quests"				"Winter 2022 Quests"
+		"DOTA_PlusSeason_SeasonWinter2022_Subtitle"				"The Winter 2022 Season will end March 1st, 2023."
+		"DOTA_PlusSeason_SeasonWinter2022_TreasureDescription"	"Available exclusively until the end of the Winter 2022 season on March 1st, 2023."
 
 		"DOTA_MatchRewards"							"Match Rewards"
 		"DOTA_MatchRewards_YourShards"				"Your Shards"
