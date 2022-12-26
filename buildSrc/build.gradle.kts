@@ -24,6 +24,6 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
 
-    implementation(platform("software.amazon.awssdk:bom:2.18.+"))
+    implementation(platform("software.amazon.awssdk:bom:2.19.+"))
     implementation("software.amazon.awssdk:s3")
 }
