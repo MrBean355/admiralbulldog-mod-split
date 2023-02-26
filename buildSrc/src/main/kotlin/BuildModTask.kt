@@ -1,5 +1,5 @@
 /*
- * Copyright 2021 Michael Johnston
+ * Copyright 2022 Michael Johnston
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,8 +18,6 @@ import compile.compileImages
 import compile.compileMaterials
 import compile.compileSounds
 import compile.renameFiles
-import compile.replaceEmoticons
-import compile.replaceStrings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
@@ -55,8 +53,9 @@ open class BuildModTask : DefaultTask() {
         }
 
         coroutineScope {
-            launch { replaceStrings(projectOutput, replacements) }
-            launch { replaceEmoticons(projectOutput, emoticons) }
+            // Disabled until we can download the source files from somewhere.
+            // launch { replaceStrings(projectOutput, replacements) }
+            // launch { replaceEmoticons(projectOutput, emoticons) }
         }
 
         if (!Environment.fullCompile) {
@@ -89,11 +88,17 @@ open class BuildModTask : DefaultTask() {
         exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)
 
         if (Environment.fullCompile) {
-            val destination = File(Environment.dotaRoot, "game/${project.name}/$OUTPUT_VPK")
+            val vpkFile = "pak${vpkIndex.toString().padStart(2, '0')}_dir.vpk"
+            val destination = File(Environment.dotaRoot, "game/dota_bulldog/$vpkFile")
             File(projectOutput, OUTPUT_VPK).copyTo(destination, overwrite = true)
+            ++vpkIndex
         }
 
         contentDir.deleteRecursively()
         compilerOutput.deleteRecursively()
+    }
+
+    companion object {
+        private var vpkIndex = 1
     }
 }
