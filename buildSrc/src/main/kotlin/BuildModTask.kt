@@ -18,8 +18,6 @@ import compile.compileImages
 import compile.compileMaterials
 import compile.compileSounds
 import compile.renameFiles
-import compile.replaceEmoticons
-import compile.replaceStrings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
@@ -55,8 +53,9 @@ open class BuildModTask : DefaultTask() {
         }
 
         coroutineScope {
-            launch { replaceStrings(projectOutput, replacements) }
-            launch { replaceEmoticons(projectOutput, emoticons) }
+            // Disabled until we can download the source files from somewhere.
+            // launch { replaceStrings(projectOutput, replacements) }
+            // launch { replaceEmoticons(projectOutput, emoticons) }
         }
 
         if (!Environment.fullCompile) {
