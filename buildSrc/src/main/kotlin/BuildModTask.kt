@@ -88,11 +88,17 @@ open class BuildModTask : DefaultTask() {
         exec("vpk -c . $OUTPUT_VPK", workingDir = projectOutput)
 
         if (Environment.fullCompile) {
-            val destination = File(Environment.dotaRoot, "game/${project.name}/$OUTPUT_VPK")
+            val vpkFile = "pak${vpkIndex.toString().padStart(2, '0')}_dir.vpk"
+            val destination = File(Environment.dotaRoot, "game/dota_bulldog/$vpkFile")
             File(projectOutput, OUTPUT_VPK).copyTo(destination, overwrite = true)
+            ++vpkIndex
         }
 
         contentDir.deleteRecursively()
         compilerOutput.deleteRecursively()
+    }
+
+    companion object {
+        private var vpkIndex = 1
     }
 }
