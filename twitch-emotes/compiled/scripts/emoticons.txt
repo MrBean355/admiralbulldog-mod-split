@@ -41,7 +41,7 @@
 	"5"
 	{
 		"image_name" "crazy.png"
-		"ms_per_frame" "100"
+		"ms_per_frame" "50"
 		"aliases"
 		{
 			"0" "crazy"
@@ -158,7 +158,7 @@
 	"18"
 	{
 		"image_name" "laugh.png"
-		"ms_per_frame" "100"
+		"ms_per_frame" "15"
 		"aliases"
 		{
 			"0" "laugh"
@@ -167,7 +167,7 @@
 	"19"
 	{
 		"image_name" "rage.png"
-		"ms_per_frame" "100"
+		"ms_per_frame" "25"
 		"aliases"
 		{
 			"0" "rage"
@@ -1000,12 +1000,12 @@
 	"106"
 	{
 		"image_name" "heart_kiss.png"
-		"ms_per_frame" "100"
+		"ms_per_frame" "25"
 		"aliases"
 		{
 			"0" "pa_kiss"
 		}
-	}
+	}	
 	"107"
 	{
 		"image_name" "arcane_rune.png"
@@ -1538,7 +1538,7 @@
 			"0"	"darkmoon_chicken"
 		}
 	}
-
+	
 	"166"
 	{
 		"image_name"	"jugg_arcana.png"
@@ -1737,7 +1737,7 @@
 			"0"	"siltbreaker"
 		}
 	}
-
+	
 	"188"
 	{
 		"image_name"	"monkey_king_arcana.png"
@@ -1747,7 +1747,7 @@
 			"0"	"mischief"
 		}
 	}
-
+	
 	"189"
 	{
 		"image_name"	"dotakin_axe_heykid.png"
@@ -1757,7 +1757,7 @@
 			"0"	"heykid"
 		}
 	}
-
+	
 	"190"
 	{
 		"image_name"	"dotakin_cm_huff.png"
@@ -1767,7 +1767,7 @@
 			"0"	"huff"
 		}
 	}
-
+	
 	"191"
 	{
 		"image_name"	"dotakin_es_beg.png"
@@ -1777,7 +1777,7 @@
 			"0"	"beg"
 		}
 	}
-
+	
 	"192"
 	{
 		"image_name"	"dotakin_kunkka_kisskiss.png"
@@ -1787,7 +1787,7 @@
 			"0"	"kisskiss"
 		}
 	}
-
+	
 	"193"
 	{
 		"image_name"	"dotakin_mk_snort.png"
@@ -1797,7 +1797,7 @@
 			"0"	"snort"
 		}
 	}
-
+	
 	"194"
 	{
 		"image_name"	"dotakin_naga_sweat.png"
@@ -1807,7 +1807,7 @@
 			"0"	"sweat"
 		}
 	}
-
+	
 	"195"
 	{
 		"image_name"	"dotakin_pudge_chuckle.png"
@@ -1817,7 +1817,7 @@
 			"0"	"chuckle"
 		}
 	}
-
+	
 	"196"
 	{
 		"image_name"	"dotakin_roshan_stars.png"
@@ -1827,7 +1827,7 @@
 			"0"	"stars"
 		}
 	}
-
+	
 	"198"
 	{
 		"image_name"	"dotakin_slark_sleep.png"
@@ -1837,7 +1837,7 @@
 			"0"	"sleep"
 		}
 	}
-
+	
 	"199"
 	{
 		"image_name"	"dotakin_tide_bawl.png"
@@ -2204,7 +2204,7 @@
 	}
 	"239"
 	{
-		"image_name"		"dazzle_shrug.png"
+		"image_name"		"dazzle_shrug.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2214,7 +2214,7 @@
 // End TI10 Guild emoticons
 	"240"
 	{
-		"image_name"		"aegis2020.png"
+		"image_name"		"aegis2020.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2224,7 +2224,7 @@
 
 	"241"
 	{
-		"image_name"		"aghs_scepter.png"
+		"image_name"		"aghs_scepter.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2233,7 +2233,7 @@
 	}
 	"242"
 	{
-		"image_name"		"big_brain.png"
+		"image_name"		"big_brain.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2243,7 +2243,7 @@
 
 	"243"
 	{
-		"image_name"		"chew.png"
+		"image_name"		"chew.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2252,7 +2252,7 @@
 	}
 	"244"
 	{
-		"image_name"		"creep_complain.png"
+		"image_name"		"creep_complain.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2262,7 +2262,7 @@
 
 	"245"
 	{
-		"image_name"		"doom_guy.png"
+		"image_name"		"doom_guy.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2271,7 +2271,7 @@
 	}
 	"246"
 	{
-		"image_name"		"giff_diretide.png"
+		"image_name"		"giff_diretide.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2281,7 +2281,7 @@
 
 	"247"
 	{
-		"image_name"		"in_the_bag.png"
+		"image_name"		"in_the_bag.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2290,7 +2290,7 @@
 	}
 	"248"
 	{
-		"image_name"		"luckycat.png"
+		"image_name"		"luckycat.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2299,7 +2299,7 @@
 	}
 	"249"
 	{
-		"image_name"		"pugna_sip.png"
+		"image_name"		"pugna_sip.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2309,7 +2309,7 @@
 
 	"250"
 	{
-		"image_name"		"unlucky_cat.png"
+		"image_name"		"unlucky_cat.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2318,7 +2318,7 @@
 	}
 	"251"
 	{
-		"image_name"		"pump_mad.png"
+		"image_name"		"pump_mad.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2327,7 +2327,7 @@
 	}
 	"252"
 	{
-		"image_name"		"pump_sad.png"
+		"image_name"		"pump_sad.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2336,7 +2336,7 @@
 	}
 	"253"
 	{
-		"image_name"		"pump_glad.png"
+		"image_name"		"pump_glad.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2345,7 +2345,7 @@
 	}
 	"254"
 	{
-		"image_name"		"omgomni.png"
+		"image_name"		"omgomni.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2354,7 +2354,7 @@
 	}
 	"255"
 	{
-		"image_name"		"diredance.png"
+		"image_name"		"diredance.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2363,57 +2363,57 @@
 	}
 	"256"
 	{
-		"image_name"		"swiz.png"
+		"image_name"		"swiz.png"	
 		"ms_per_frame"		"200"
 		"aliases"
 		{
 			"0"				"swiz"
 		}
 	}
-
+	
 	"257"
 	{
-		"image_name"		"wiz_wow.png"
+		"image_name"		"wiz_wow.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"wiz_wow"
 		}
 	}
-
+	
 	"258"
 	{
-		"image_name"		"wiz_bringit.png"
+		"image_name"		"wiz_bringit.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"wiz_bringit"
 		}
 	}
-
+	
 	"259"
 	{
-		"image_name"		"wiz_glhf.png"
+		"image_name"		"wiz_glhf.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"wiz_glhf"
 		}
 	}
-
+	
 	"260"
 	{
-		"image_name"		"wiz_help.png"
+		"image_name"		"wiz_help.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"wiz_help"
 		}
 	}
-
+	
 	"261"
 	{
-		"image_name"		"wiz_wat.png"
+		"image_name"		"wiz_wat.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2434,27 +2434,27 @@
 
 	"263"
 	{
-		"image_name"		"mango.png"
+		"image_name"		"mango.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"mango"
 		}
 	}
-
+	
 	"264"
 	{
-		"image_name"		"earth_perfect.png"
+		"image_name"		"earth_perfect.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"earth_perfect"
 		}
 	}
-
+	
 	"265"
 	{
-		"image_name"		"earth_grin.png"
+		"image_name"		"earth_grin.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2464,7 +2464,7 @@
 
 	"266"
 	{
-		"image_name"		"abaddon_depressed.png"
+		"image_name"		"abaddon_depressed.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2473,7 +2473,7 @@
 	}
 	"267"
 	{
-		"image_name"		"bkb.png"
+		"image_name"		"bkb.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2482,7 +2482,7 @@
 	}
 	"268"
 	{
-		"image_name"		"bloodthirsty.png"
+		"image_name"		"bloodthirsty.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2491,7 +2491,7 @@
 	}
 	"269"
 	{
-		"image_name"		"dagon.png"
+		"image_name"		"dagon.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2500,7 +2500,7 @@
 	}
 	"270"
 	{
-		"image_name"		"davion_sexy.png"
+		"image_name"		"davion_sexy.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2509,7 +2509,7 @@
 	}
 	"271"
 	{
-		"image_name"		"ember_angry.png"
+		"image_name"		"ember_angry.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2518,7 +2518,7 @@
 	}
 	"272"
 	{
-		"image_name"		"ember_shakefist.png"
+		"image_name"		"ember_shakefist.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2527,7 +2527,7 @@
 	}
 	"273"
 	{
-		"image_name"		"euls.png"
+		"image_name"		"euls.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2536,7 +2536,7 @@
 	}
 	"274"
 	{
-		"image_name"		"fasta.png"
+		"image_name"		"fasta.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2545,7 +2545,7 @@
 	}
 	"275"
 	{
-		"image_name"		"hoodwink_sad.png"
+		"image_name"		"hoodwink_sad.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2555,7 +2555,7 @@
 
 	"276"
 	{
-		"image_name"		"hookless.png"
+		"image_name"		"hookless.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2565,7 +2565,7 @@
 
 	"277"
 	{
-		"image_name"		"invoker_dry.png"
+		"image_name"		"invoker_dry.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2574,7 +2574,7 @@
 	}
 	"278"
 	{
-		"image_name"		"luna_rage.png"
+		"image_name"		"luna_rage.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2583,7 +2583,7 @@
 	}
 	"279"
 	{
-		"image_name"		"manta.png"
+		"image_name"		"manta.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2593,7 +2593,7 @@
 
 	"280"
 	{
-		"image_name"		"marci_whistle.png"
+		"image_name"		"marci_whistle.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2602,7 +2602,7 @@
 	}
 	"281"
 	{
-		"image_name"		"mirana_drink.png"
+		"image_name"		"mirana_drink.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2611,7 +2611,7 @@
 	}
 	"282"
 	{
-		"image_name"		"profit.png"
+		"image_name"		"profit.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2620,7 +2620,7 @@
 	}
 	"283"
 	{
-		"image_name"		"radiance.png"
+		"image_name"		"radiance.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2629,7 +2629,7 @@
 	}
 	"284"
 	{
-		"image_name"		"rapier.png"
+		"image_name"		"rapier.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2638,7 +2638,7 @@
 	}
 	"286"
 	{
-		"image_name"		"shadowdemon_sus.png"
+		"image_name"		"shadowdemon_sus.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2647,7 +2647,7 @@
 	}
 	"287"
 	{
-		"image_name"		"slardar_sleepy.png"
+		"image_name"		"slardar_sleepy.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2656,7 +2656,7 @@
 	}
 	"288"
 	{
-		"image_name"		"spin.png"
+		"image_name"		"spin.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2665,7 +2665,7 @@
 	}
 	"289"
 	{
-		"image_name"		"spotted.png"
+		"image_name"		"spotted.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2674,7 +2674,7 @@
 	}
 	"290"
 	{
-		"image_name"		"storm_clap.png"
+		"image_name"		"storm_clap.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2683,7 +2683,7 @@
 	}
 	"291"
 	{
-		"image_name"		"storm_impressed.png"
+		"image_name"		"storm_impressed.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2692,7 +2692,7 @@
 	}
 	"292"
 	{
-		"image_name"		"tango.png"
+		"image_name"		"tango.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2701,7 +2701,7 @@
 	}
 	"293"
 	{
-		"image_name"		"tb_laugh.png"
+		"image_name"		"tb_laugh.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2710,7 +2710,7 @@
 	}
 	"294"
 	{
-		"image_name"		"void_thumbsdown.png"
+		"image_name"		"void_thumbsdown.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2719,7 +2719,7 @@
 	}
 	"295"
 	{
-		"image_name"		"void_unimpressed.png"
+		"image_name"		"void_unimpressed.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2728,7 +2728,7 @@
 	}
 	"296"
 	{
-		"image_name"		"whoahahah.png"
+		"image_name"		"whoahahah.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -2737,17 +2737,17 @@
 	}
 	"297"
 	{
-		"image_name"		"predict_win.png"
+		"image_name"		"predict_win.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
 			"0"				"ti10_compendium"
 		}
 	}
-
+	
 	"298"
 	{
-		"image_name"		"agh2_awooga.png"
+		"image_name"		"agh2_awooga.png"	
 		"ms_per_frame"		"100"
 		"default_frame" "1"
 		"aliases"
@@ -2755,10 +2755,10 @@
 			"0"				"aghawooga"
 		}
 	}
-
+	
 	"299"
 	{
-		"image_name"		"agh2_awwghanim.png"
+		"image_name"		"agh2_awwghanim.png"	
 		"ms_per_frame"		"100"
 		"default_frame" "1"
 		"aliases"
@@ -2769,7 +2769,7 @@
 
 	"300"
 	{
-		"image_name"		"agh2_lets_fraghing_go.png"
+		"image_name"		"agh2_lets_fraghing_go.png"	
 		"ms_per_frame"		"100"
 		"default_frame" "1"
 		"aliases"
@@ -2780,7 +2780,7 @@
 
 	"301"
 	{
-		"image_name"		"agh2_poghanim.png"
+		"image_name"		"agh2_poghanim.png"	
 		"ms_per_frame"		"100"
 		"default_frame" "1"
 		"aliases"
@@ -2791,7 +2791,7 @@
 
 	"302"
 	{
-		"image_name"		"agh2_smughanim.png"
+		"image_name"		"agh2_smughanim.png"	
 		"ms_per_frame"		"100"
 		"default_frame" "1"
 		"aliases"
@@ -2799,10 +2799,10 @@
 			"0"				"smughanim"
 		}
 	}
-
+	
 	"303"
 	{
-		"image_name"		"agh2_swaghanim.png"
+		"image_name"		"agh2_swaghanim.png"	
 		"ms_per_frame"		"100"
 		"default_frame" "1"
 		"aliases"
@@ -2948,7 +2948,7 @@
 
 	"329"
 	{
-		"image_name"		"sagan_sad.png"
+		"image_name"		"sagan_sad.png"	
 		"ms_per_frame"		"100"
 		"aliases"
 		{
@@ -3230,7 +3230,7 @@
 
 	// ------------------------------------------------------------------------
 	//  ADD NEW EMOTICONS HERE
-	//
+	// 
 	//  Exceptions:
 	//    * If you're adding a whole batch of new emoticons, and you're not sure
 	//      how they will all be used, put them in emoticons_staging.txt. That way
@@ -3238,5 +3238,6 @@
 	//    * Team Flair Emoticons go in emoticons_teams.txt
 	//    * Rank Emoticons go in emoticons_ranked.txt
 	// ------------------------------------------------------------------------
-
+	
 }
+
