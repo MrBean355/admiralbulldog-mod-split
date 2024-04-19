@@ -33,6 +33,7 @@ import java.io.File
 
 private const val COMPILED_DIR = "compiled"
 private const val OUTPUT_VPK = "pak01_dir.vpk"
+private const val INSTALL_DIR = "game/dota_bulldog"
 
 open class BuildModTask : DefaultTask() {
     @Input
@@ -90,7 +91,7 @@ open class BuildModTask : DefaultTask() {
 
         if (Environment.fullCompile) {
             val vpkFile = "pak${vpkIndex.toString().padStart(2, '0')}_dir.vpk"
-            val destination = File(Environment.dotaRoot, "game/dota_bulldog/$vpkFile")
+            val destination = File(Environment.dotaRoot, "$INSTALL_DIR/$vpkFile")
             File(projectOutput, OUTPUT_VPK).copyTo(destination, overwrite = true)
             ++vpkIndex
         }
@@ -101,5 +102,10 @@ open class BuildModTask : DefaultTask() {
 
     companion object {
         private var vpkIndex = 1
+
+        fun reset() {
+            File(Environment.dotaRoot, INSTALL_DIR).deleteRecursively()
+            vpkIndex = 1
+        }
     }
 }
