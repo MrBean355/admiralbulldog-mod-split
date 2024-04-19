@@ -8,15 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v2.3.4
-        with:
-          ref: main
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12.3'
 
       - name: Install Python dependencies
         run: |
@@ -29,7 +27,6 @@ jobs:
           ./gradlew buildMod -Pcompiler.fullCompile=false
 
       - name: Upload mods to S3
-        if: github.ref == 'refs/heads/main'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -38,24 +35,9 @@ jobs:
         run: |
           ./gradlew publishMod -Ptelegram.sendMessage=true
 
-      - name: Commit & push main changes
+      - name: Commit & push changes
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'mrbean355@users.noreply.github.com'
-          git commit -am "Add the latest strings files" || true
-          git push
-
-      - name: Checkout develop
-        uses: actions/checkout@v2.3.4
-        with:
-          ref: develop
-
-      - name: Repackage develop mods
-        run: |
-          chmod +x gradlew
-          ./gradlew buildMod -Pcompiler.fullCompile=false
-
-      - name: Commit & push develop changes
-        run: |
           git commit -am "Add the latest strings files" || true
           git push
