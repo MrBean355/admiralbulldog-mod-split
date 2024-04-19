@@ -49,6 +49,8 @@ dotaMod {
         // Chat wheel: text
         id("dota_chatwheel_label_Stun", "STUN HIM!")
         id("dota_chatwheel_message_Stun", "STUN HIM! WHAT ARE YOU DOING?! ARE YOU KIDDING ME?! Are you kidding?!")
+        id("dota_chatwheel_label_Crickets", "I might die")
+        id("dota_chatwheel_message_Crickets", "If I go in I might die, if I go in I might die")
 
         // Chat wheel: audio
         id("dota_chatwheel_label_weaver_thank", "Ronnie Coleman")
