@@ -36,7 +36,7 @@ private fun downloadEmoticonsFile(destination: File): File {
     val response = GitHubService.INSTANCE.getEmoticonsFile().execute()
     val bytes = response.body()?.bytes() ?: error("Null body received for $EMOTICONS_FILE")
     return File(destination, EMOTICONS_FILE).apply {
-        writeBytes(bytes)
+        writeText(String(bytes, Charsets.UTF_16LE))
     }
 }
 
