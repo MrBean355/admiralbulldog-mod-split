@@ -1,0 +1,12 @@
+include(
+    "base-mod",
+    "custom-spell-icons",
+    "custom-spell-sounds",
+    "elegiggle-deny",
+    "fat-mango",
+    "manly-bullwhip",
+    "mask-of-maldness",
+    "old-hero-icons",
+    "twitch-emotes",
+    "yep-ping"
+)
