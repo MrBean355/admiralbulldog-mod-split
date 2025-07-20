@@ -18,9 +18,9 @@ tasks.withType<KotlinCompile> {
 }
 
 dependencies {
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:retrofit:3.0.0")
     implementation("com.squareup.retrofit2:converter-gson:3.0.0")
-    implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
+    implementation("com.squareup.retrofit2:converter-scalars:3.0.0")
     implementation("com.google.code.gson:gson:2.13.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
 
