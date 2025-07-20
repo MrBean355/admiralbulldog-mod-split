@@ -6,7 +6,3 @@ updates:
       interval: monthly
     open-pull-requests-limit: 10
     target-branch: main
-    reviewers:
-      - MrBean355
-    assignees:
-      - MrBean355
