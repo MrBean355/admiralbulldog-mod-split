@@ -1,7 +1,7 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "2.0.21"
+    kotlin("jvm") version "2.2.0"
 }
 
 repositories {
@@ -13,8 +13,10 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.JVM_1_8
+    }
 }
 
 dependencies {
