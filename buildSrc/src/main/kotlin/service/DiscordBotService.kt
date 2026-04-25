@@ -32,7 +32,7 @@ interface DiscordBotService {
 
         private fun hostUrl(): String {
             return if (System.getenv("TARGET_ROONS_ENV") == "prod") {
-                "http://prod.upmccxmkjx.us-east-2.elasticbeanstalk.com:8090/"
+                "https://discord-roons-bot-b319e9557565.herokuapp.com/"
             } else {
                 "http://localhost:8090/"
             }
