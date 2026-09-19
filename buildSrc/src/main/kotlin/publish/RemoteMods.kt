@@ -20,7 +20,7 @@ object RemoteMods {
         require(!token.isNullOrBlank()) {
             "No token provided via AUTH_TOKEN"
         }
-        val response = DiscordBotService.INSTANCE.patchMod(key, newHash, size, token, message).execute()
+        val response = DiscordBotService.INSTANCE.patchMod(key, newHash, size, "Bearer $token", message).execute()
         if (!response.isSuccessful) {
             error("Failed to update mod hash: $response")
         }

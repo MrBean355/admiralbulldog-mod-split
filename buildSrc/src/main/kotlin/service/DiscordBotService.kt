@@ -5,6 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
 import retrofit2.http.GET
+import retrofit2.http.Header
 import retrofit2.http.PATCH
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -19,7 +20,7 @@ interface DiscordBotService {
         @Path("key") key: String,
         @Query("hash") hash: String,
         @Query("size") size: Int,
-        @Query("token") token: String,
+        @Header("Authorization") token: String,
         @Query("message") message: String?
     ): Call<Unit>
 
